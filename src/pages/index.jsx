@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 
 export default function Home() {
+  const vidRef = useRef();
+
+  useEffect(() => {
+    vidRef.current.play();
+  }, []);
   return (
     <main>
       <section className="h-fit relative w-full flex items-center flex-col justify-end min-h-[calc(90vh-2rem)]  ">
@@ -9,20 +15,23 @@ export default function Home() {
             Connecting People, Places, Assets and Operations.
           </h1>
           <p className=" mb-24 px-3  z-10 text-base md:text-lg lg:text-2xl  text-[#6F7073]   max-w-4xl text-center">
-            Our solutions are designed to transform the way businesses operate
-            in three key industries:{" "}
-            <b>aviation, oil & gas, and manufacturing.</b>
+            Our solutions transform business operations for key industries like:{" "}
+            <b>Aviation, Oil & Gas, Manufacturing and F&B.</b>
           </p>
         </div>
 
         {/* import video here class absolute  */}
 
-        <Image
-          src="/temp.jpg "
-          className="-z-10 absolute"
+        <video
+          loop
+          autoPlay={true}
+          muted={true}
+          ref={vidRef}
+          className="-z-10 absolute w-full  object-cover h-full"
           alt="hero"
-          fill
-        ></Image>
+          src="/HomepageVideo.mp4"
+          type="video/mp4"
+        ></video>
 
         {/* <video  /> */}
       </section>
@@ -46,9 +55,9 @@ export default function Home() {
             Aviation
           </h2>
           <p className=" text-[#6F7073] text-justify text-sm md:text-base">
-            GroundRadar enhances airline and airport operations with IoT,
-            Camera-AI, and real-time predictive decision-making, ensuring a
-            strong ROI.
+            Our IoT solutions unite Airlines, Airports, and Ground Handlers,
+            enabling seamless Airside Operations, Optimized Resource Allocation,
+            and real-time Decision-Making covering over 64 operations.
           </p>
         </div>
         <div>
