@@ -22,11 +22,23 @@ export default function Layout({ children }, props) {
 
         <div className="flex gap-1 ">
           <Link href="/">
-            <button className=" h-9 bg-[#C8c8c8] px-5">What we do</button>
+            <button className=" h-9 px-11 md:flex hidden font-medium text-secondary-300 text-xl bg-[#C8c8c8] ">
+              What we do
+            </button>
           </Link>
 
+          <div className="mt-2 md:flex hidden px-11 text-[#6F7073] items-center font-medium gap-1">
+            Products
+          </div>
+          <div className="mt-2 md:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
+            Solutions
+          </div>
+          <div className="mt-2 md:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
+            Demo
+          </div>
+
           <Link href="/">
-            <button className=" h-9 bg-primary-100 text-white px-5">
+            <button className=" rounded-md md:flex hidden px-11 font-medium h-9 text-xl bg-primary-100 text-white ">
               Get in touch
             </button>
           </Link>

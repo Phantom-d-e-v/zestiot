@@ -8,7 +8,7 @@ export default function Home() {
           <h1 className=" m-auto mb-5  mt-10 px-3 text-4xl md:text-5xl lg:text-6xl text-primary-100  font-semibold lg:max-w-4xl md:max-w-3xl text-center">
             Connecting People, Places, Assets and Operations.
           </h1>
-          <p className=" mb-24 px-3  z-10 text-base md:text-lg lg:text-2xl  text-[#6F7073]   max-w-6xl text-center">
+          <p className=" mb-24 px-3  z-10 text-base md:text-lg lg:text-2xl  text-[#6F7073]   max-w-4xl text-center">
             Our solutions are designed to transform the way businesses operate
             in three key industries:{" "}
             <b>aviation, oil & gas, and manufacturing.</b>
