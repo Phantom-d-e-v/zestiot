@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 export default function App({ Component, pageProps }) {
   return (
     <Layout>
-      <main className="mt-16">
+      <main className="mt-20">
         <Component {...pageProps} />
       </main>
     </Layout>

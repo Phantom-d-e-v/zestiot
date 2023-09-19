@@ -13,8 +13,8 @@ export default function Layout({ children }, props) {
         <meta property="og:title" content={`${props.title}`} key="title" />
       </Head>
 
-      <nav className="h-14 w-full flex justify-between items-center bg-white px-4 py-2 shadow-md fixed top-0 z-10  ">
-        <Link className=" relative w-20 h-full" href="/">
+      <nav className="h-20 w-full flex justify-between items-center bg-white px-4 py-2 shadow-md fixed top-0 z-[999]  ">
+        <Link className=" relative w-32 h-full" href="/">
           <div>
             <Image src="/zestiot.svg" alt="logo" fill />
           </div>
@@ -22,11 +22,13 @@ export default function Layout({ children }, props) {
 
         <div className="flex gap-1 ">
           <Link href="/">
-            <button>What we do</button>
+            <button className=" h-9 bg-[#C8c8c8] px-5">What we do</button>
           </Link>
-          <Link href="/">Demo</Link>
+
           <Link href="/">
-            <button>Get in touch</button>
+            <button className=" h-9 bg-primary-100 text-white px-5">
+              Get in touch
+            </button>
           </Link>
         </div>
       </nav>
