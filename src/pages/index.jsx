@@ -2,11 +2,6 @@ import Image from "next/image";
 import { useRef, useEffect } from "react";
 
 export default function Home() {
-  const vidRef = useRef();
-
-  useEffect(() => {
-    vidRef.current.play();
-  }, []);
   return (
     <main>
       <section className="h-fit relative w-full flex items-center flex-col justify-end min-h-[calc(90vh-2rem)]  ">
@@ -24,9 +19,8 @@ export default function Home() {
 
         <video
           loop
-          autoPlay={true}
-          muted={true}
-          ref={vidRef}
+          autoPlay
+          muted
           className="-z-10 absolute w-full  object-cover h-full"
           alt="hero"
           src="/HomepageVideo.mp4"

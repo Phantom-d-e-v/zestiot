@@ -16,29 +16,35 @@ export default function Layout({ children }, props) {
       <nav className="h-20 w-full flex justify-between items-center bg-white px-4 py-2 shadow-md fixed top-0 z-[999]  ">
         <Link className=" relative w-32 h-full" href="/">
           <div>
-            <Image src="/zestiot.svg" alt="logo" fill />
+            <Image
+              className="pl-2"
+              src="/zestiot.svg"
+              objectPosition="center"
+              alt="logo"
+              fill
+            />
           </div>
         </Link>
 
         <div className="flex gap-1 ">
           <Link href="/">
-            <button className=" h-9 px-11 md:flex hidden font-medium text-secondary-300 text-xl bg-[#C8c8c8] ">
+            <button className=" h-9 px-11 lg:block hidden font-medium text-secondary-300 text-xl bg-[#C8c8c8] ">
               What we do
             </button>
           </Link>
 
-          <div className="mt-2 md:flex hidden px-11 text-[#6F7073] items-center font-medium gap-1">
+          <div className="mt-2 lg:flex hidden px-11 text-[#6F7073] items-center font-medium gap-1">
             Products
           </div>
-          <div className="mt-2 md:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
+          <div className="mt-2 lg:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
             Solutions
           </div>
-          <div className="mt-2 md:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
+          <div className="mt-2 lg:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
             Demo
           </div>
 
           <Link href="/">
-            <button className=" rounded-md md:flex hidden px-11 font-medium h-9 text-xl bg-primary-100 text-white ">
+            <button className=" rounded-md  lg:block hidden px-11 font-medium h-9 text-xl bg-primary-100 text-white ">
               Get in touch
             </button>
           </Link>
