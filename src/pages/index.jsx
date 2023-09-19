@@ -40,7 +40,7 @@ export default function Home() {
           <h2 className=" w-full mt-3 mb-6  md:mt-5 md:mb-8  font-bold text-center text-[#6F7073] text-2xl md:text-3xl  ">
             Aviation
           </h2>
-          <p className=" text-[#6F7073] text-justify text-sm md:text-base text-sm md:text-base">
+          <p className=" text-[#6F7073] text-justify text-sm md:text-base">
             GroundRadar enhances airline and airport operations with IoT,
             Camera-AI, and real-time predictive decision-making, ensuring a
             strong ROI.
