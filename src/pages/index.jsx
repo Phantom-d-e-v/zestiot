@@ -15,9 +15,14 @@ export default function Home() {
           </p>
         </div>
 
-        {/* import video here  */}
+        {/* import video here class absolute  */}
 
-        <Image src="/temp.jpg " className="-z-10" alt="hero" fill></Image>
+        <Image
+          src="/temp.jpg "
+          className="-z-10 absolute"
+          alt="hero"
+          fill
+        ></Image>
 
         {/* <video  /> */}
       </section>
