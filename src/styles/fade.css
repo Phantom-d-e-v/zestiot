@@ -8,3 +8,16 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.count-up-animation {
+  animation: countUp 2s ease-out forwards;
+}
+
+@keyframes countUp {
+  from {
+    content: "0";
+  }
+  to {
+    content: "6500+";
+  }
+}

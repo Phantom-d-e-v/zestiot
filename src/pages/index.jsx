@@ -110,11 +110,17 @@ export default function Home() {
     <main>
       <section className="h-fit relative w-full flex items-center flex-col justify-end min-h-[calc(90vh-2rem)]  ">
         <div className="  h-fit ">
-          <h1 className=" m-auto mb-5  mt-10 px-3 text-4xl md:text-5xl lg:text-6xl text-primary-100  font-semibold lg:max-w-4xl md:max-w-3xl text-center">
+          <h1
+            style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
+            className=" m-auto mb-5  mt-10 px-3 text-4xl md:text-5xl lg:text-6xl text-[#fff]  font-bold lg:max-w-4xl md:max-w-3xl text-center"
+          >
             Connecting People, Places, Assets and Operations.
           </h1>
-          <p className=" mb-24 px-3  z-10 text-base md:text-lg lg:text-2xl  text-[#6F7073]   max-w-4xl text-center">
-            Our solutions transform business operations for key industries like:{" "}
+          <p
+            style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
+            className=" mb-24 px-3  z-10 text-base md:text-lg lg:text-2xl  text-[#fff]   max-w-4xl text-center"
+          >
+            Our solutions transform business operations for key industries like:
             <b>Aviation, Oil & Gas, Manufacturing and F&B.</b>
           </p>
         </div>
@@ -127,7 +133,7 @@ export default function Home() {
           muted
           className="-z-10 absolute w-full  object-cover h-full"
           alt="hero"
-          src="/HomepageVideo.mp4"
+          src="/HomepageVideo.m4v"
           type="video/mp4"
         ></video>
 
@@ -138,11 +144,11 @@ export default function Home() {
         ref={elementRef1}
         className={`fade-in ${isVisible1 ? "active" : ""}`}
       >
-        <section className="-mt-10 lg:max-w-7xl m-auto px-2 grid-cols-2 md:max-w-2xl max-w-sm lg:grid-cols-4 grid gap-7 -bottom-4">
+        <section className="-mt-10 lg:max-w-7xl m-auto px-2 grid-cols-2 md:max-w-2xl max-w-sm lg:grid-cols-4 grid gap-20 -bottom-4">
           <div>
-            <div className="w-full rounded-md px-7 py-3 bg-primary-100 aspect-[3/2]  flex justify-center items-center  ">
+            <div className="w-full rounded-md px-7 py-3 bg-primary-100 aspect-[6/5]  flex justify-center items-center  ">
               <svg
-                className=" aspect-[3/2]"
+                className=" aspect-[3/2] w-40 h-20 "
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 143 70"
                 fill="none"
@@ -156,7 +162,7 @@ export default function Home() {
             <h2 className=" w-full mt-3 mb-6  md:mt-5 md:mb-8  font-bold text-center text-[#6F7073] text-2xl md:text-3xl  ">
               Aviation
             </h2>
-            <p className=" text-[#6F7073] text-justify text-sm md:text-base">
+            <p className=" text-[#6F7073] text-center text-sm md:text-base">
               Our IoT solutions unite Airlines, Airports, and Ground Handlers,
               enabling seamless Airside Operations, Optimized Resource
               Allocation, and real-time Decision-Making covering over 64
@@ -164,9 +170,9 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <div className="w-full rounded-md px-7 py-3 bg-[#3A3A3A] aspect-[3/2]  flex justify-center items-center  ">
+            <div className="w-full rounded-md px-7 py-3 bg-[#3A3A3A] aspect-[6/5]  flex justify-center items-center  ">
               <svg
-                className=" aspect-[3/2]"
+                className=" aspect-[3/2] w-32 h-32"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
                 fill="none"
@@ -180,16 +186,16 @@ export default function Home() {
             <h2 className=" w-full mt-3 mb-6  md:mt-5 md:mb-8  font-bold text-center text-[#6F7073] text-2xl md:text-3xl">
               Manufacturing
             </h2>
-            <p className=" text-[#6F7073] text-justify text-sm md:text-base">
+            <p className=" text-[#6F7073] text-center text-sm md:text-base">
               CameraAI enhances operations with connected systems for safety,
               security, and automation, and offers quality control through
               machine vision.
             </p>
           </div>
           <div>
-            <div className="w-full rounded-md px-7 py-3 bg-primary-100 aspect-[3/2]  flex justify-center items-center  ">
+            <div className="w-full rounded-md px-7 py-3 bg-primary-100 aspect-[6/5]  flex justify-center items-center  ">
               <svg
-                className=" aspect-[3/2]"
+                className=" aspect-[3/2] w-32 h-32"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 104 103"
                 fill="none"
@@ -214,16 +220,16 @@ export default function Home() {
             <h2 className=" w-full mt-3 mb-6  md:mt-5 md:mb-8  font-bold text-center text-[#6F7073] text-2xl md:text-3xl">
               Oil & Gas
             </h2>
-            <p className=" text-[#6F7073] text-justify  text-sm md:text-base">
+            <p className=" text-[#6F7073] text-center  text-sm md:text-base">
               Camera AI connects with PLC and automation systems to monitor
               safety, SOP compliance, quality, and automation for enhanced
               operational safety and quality.
             </p>
           </div>
           <div>
-            <div className="w-full rounded-md px-7 py-3 bg-[#3A3A3A] aspect-[3/2]  flex justify-center items-center  ">
+            <div className="w-full rounded-md px-7 py-3 bg-[#3A3A3A] aspect-[6/5]  flex justify-center items-center  ">
               <svg
-                className=" aspect-[3/2]"
+                className=" aspect-[3/2] w-32 h-32"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 90 91"
                 fill="none"
@@ -260,7 +266,7 @@ export default function Home() {
             <h2 className=" w-full mt-3 mb-6  md:mt-5 md:mb-8  font-bold text-center text-[#6F7073] text-2xl md:text-3xl">
               Food & Beverages
             </h2>
-            <p className=" text-[#6F7073] text-justify text-sm md:text-base">
+            <p className=" text-[#6F7073] text-center text-sm md:text-base">
               ZestIoT excels in quality inspections for the food and beverage
               industry, ensuring product quality.
             </p>
@@ -272,20 +278,16 @@ export default function Home() {
         ref={elementRef2}
         className={`fade-in ${isVisible2 ? "active" : ""}`}
       >
-        <section className=" mt-40  text-[#3A3A3A] max-w-7xl m-auto flex flex-col md:flex-row gap-10 p-2 px-5 ">
-          <div className=" w-full  font-semibold    lg:text-5xl md:text-4xl text-3xl">
-            We harness the potential of our{" "}
-            <span className=" font-extrabold">
-              Digitalised IoT & CameraAI connected platform
-            </span>{" "}
-            to empower our customers and ensure
+        <section className=" mt-40  text-[#3A3A3A] max-w-7xl m-auto flex flex-col  gap-10 p-2 px-5 items-center ">
+          <div className=" text-[#6F7073] w-full font-medium leading-normal lg:text-[38px] md:text3xl text-justify text-lg">
+            By leveraging the power of our Digitalised IoT & CameraAI connected
+            platform, we help our customers transform their business to ensure
+            real time smart decisions, high degree of operations safety and
+            consistent ROI
           </div>
-          <div className=" text-[#6F7073] w-full font-medium lg:text-3xl md:text2xl text-justify text-lg">
-            By leveraging IoT technology, businesses can implement predictive
-            maintenance programs that can alert them to potential problems
-            before they occur, thereby avoiding costly downtime and improving
-            operational efficiency.
-          </div>
+          <button className=" rounded-md w-56 mt-14 px-11 font-medium h-12 text-xl bg-[#fff] text-[#0000F2] outline outline-[#0000F2]  hover:bg-[#0000F2] hover:text-white transition-all duration-300 ease-in-out">
+            DEMO
+          </button>
         </section>
       </div>
 
@@ -295,13 +297,19 @@ export default function Home() {
       >
         <section className="w-full py-14 mt-40  bg-primary-100  ">
           <div className="flex w-full max-w-6xl m-auto justify-around items-center">
-            <div className=" flex flex-col gap-2 text-white justify-center items-center">
-              <span className=" font-extrabold  md:text-4xl text-3xl lg:text-6xl">
+            <div
+              className={`flex flex-col gap-2 text-white justify-center items-center `}
+            >
+              <span
+                className={`font-extrabold  md:text-4xl text-3xl lg:text-6xl ${
+                  isVisible3 ? "count-up-animation" : ""
+                }`}
+              >
                 6500+
               </span>
               <span className=" md:text-lg text-base lg:text-xl">Cameras</span>
             </div>
-            <div className=" flex flex-col gap-2 text-white justify-center items-center">
+            <div className=" flex flex-col gap-2 text-white justify-center items-center ">
               <span className=" font-extrabold  md:text-4xl text-3xl lg:text-6xl">
                 2000+
               </span>
@@ -317,6 +325,10 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className=" py-52">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="w-full" src="/successMetric.png" alt="sm" />
+        </section>
       </div>
 
       <div
@@ -325,18 +337,16 @@ export default function Home() {
       >
         <section className=" pt-28 w-full pb-28 bg-[#FAFAFA]">
           <div className=" px-3 max-w-7xl m-auto">
-            <h2 className=" text-6xl md:text-8xl font-extrabold pb-20 text-primary-100">
+            <h2 className=" text-6xl md:text-8xl pt-32 font-extrabold pb-20 text-primary-100">
               Why ZestIOT.
             </h2>
             <div className="md:flex ">
               <div className="w-1/3"></div>
               <div className="md:w-2/3 w-full">
-                <p className="text-[#1B1B1B] mb-20 text-justify lg:text-4xl md:text-3xl font-bold text-2xl">
-                  We are committed to providing innovative, reliable, and
-                  customer - focused solutions that demonstrate excellence and
-                  make an impact for our clients. Our team of experts is
-                  dedicated to delivering the best possible solutions and
-                  providing ongoing support to help our clients succeed.
+                <p className="text-[#1B1B1B] mb-20 pt-14 text-justify lg:text-4xl md:text-3xl font-bold text-2xl">
+                  We are committed to providing Innovative, Reliable, and
+                  Customer-focused solutions that demonstrate excellence and
+                  help our customers succeed.
                 </p>
                 <div className="flex gap-10 mb-20">
                   <div className="flex flex-col gap-3">
@@ -367,10 +377,15 @@ export default function Home() {
                     <span className=" text-primary-100 font-bold lg:text-2xl md:text-xl text-lg">
                       TRUST & RELIABILITY
                     </span>
-                    <p className=" text-justify text-[#1B1B1B] font-semibold lg:text-xl md:text-lg text-base">
+                    <p className=" text-justify pt-8 text-[#1B1B1B] font-bold lg:text-xl md:text-lg text-base">
                       You can count on us to deliver high-quality, reliable
                       solutions that meet your needs. We take pride in our work
-                      and stand behind everything we do.
+                      and stand with you all through to make it work for you
+                      <br /> <br />
+                      <span className=" font-medium">
+                        Domain Expertise | Responsiveness | Successful Track
+                        Record | Turnaround Speed | Consistency
+                      </span>
                     </p>
                   </div>
                   <div className="flex flex-col gap-3">
@@ -399,19 +414,24 @@ export default function Home() {
                       </svg>
                     </div>
                     <span className=" text-primary-100 font-bold lg:text-2xl md:text-xl text-lg">
-                      EFFICIENT INNOVATION
+                      PRIORITISING CLIENT EXPERIENCE
                     </span>
-                    <p className=" text-justify text-[#1B1B1B] font-semibold lg:text-xl md:text-lg text-base">
-                      We&rsquo;re constantly pushing the boundaries of
-                      what&rsquo;s possible with IOT technology. Our solutions
-                      are designed to help you stay ahead of the curve and
-                      achieve your business goals.
+                    <p className=" text-justify text-[#1B1B1B] font-bold lg:text-xl md:text-lg text-base">
+                      We put our customers first in everything we do. From
+                      Pre-Sales Solutioning to Go-Live and ongoing support,
+                      we&apos;re here to help you succeed.
+                      <br /> <br />
+                      <span className=" font-medium">
+                        In depth understanding of Unique Client Problems &
+                        Resources | Proof of Value | Bespoke Solutions 
+                      </span>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="md:flex  flex-row-reverse  ">
+
+            <div className="md:flex    ">
               <div className="w-1/3"></div>
               <div className="md:w-2/3 w-full">
                 <div className="flex gap-10 mb-20">
@@ -453,12 +473,21 @@ export default function Home() {
                       </svg>
                     </div>
                     <span className=" text-primary-100 font-bold lg:text-2xl md:text-xl text-lg">
-                      TRUST & RELIABILITY
+                      EFFICIENT INNOVATION
                     </span>
                     <p className=" text-justify text-[#1B1B1B] font-semibold lg:text-xl md:text-lg text-base">
-                      You can count on us to deliver high-quality, reliable
-                      solutions that meet your needs. We take pride in our work
-                      and stand behind everything we do.
+                      We constantly push boundaries to solve our customer’s
+                      problems; continuously innovating with
+                      possibilitiespossiblities of IOT technology. Our solutions
+                      have a single minded focus to help customers stay ahead of
+                      the curve to achieve operational efficiency in their
+                      business
+                      <br /> <br />
+                      <span className=" font-medium">
+                        Investing in Research and Development | Delivering
+                        Intelligent Integrated Tools | Enabling Greater
+                        Visibility and Control
+                      </span>
                     </p>
                   </div>
                   <div className="flex flex-col gap-3">
@@ -491,9 +520,14 @@ export default function Home() {
                     </span>
                     <p className=" text-justify text-[#1B1B1B] font-semibold lg:text-xl md:text-lg text-base">
                       We understand that every business has unique needs and
-                      challenges. That&rsquo;s why we work closely with our
-                      clients to develop solutions that are tailored to their
-                      specific challenges.
+                      challenges. That&apos;s why we work closely with our
+                      customers to develop solutions that are tailored to
+                      address their business challenges and deliver on ROI
+                      <br /> <br />
+                      <span className=" font-medium">
+                        Balancing multiple stakeholders for Collective Success |
+                        Agile Operations | Persistent yet Pragmatic Approach 
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -566,10 +600,10 @@ export default function Home() {
             <h2 className=" text-5xl md:text-7xl font-extrabold pb-5 text-primary-100">
               Get In Touch.
             </h2>
-            <p className="   font-medium lg:text-4xl md:text-3xl text-2xl mt-10 mb-28 ">
-              Join the ranks of satisfied customers who have experienced the
-              transformative power of our IOT solutions. Contact us today to
-              learn more and ﬁll out our get in touch form.
+            <p className="   font-medium lg:text-2xl md:text-2xl text-xl mt-10 mb-28 ">
+              Partner with us and join the ranks of satisfied customers who have
+              experienced the transformative power of our IOT solutions. Contact
+              us today to learn more and fill out our get in touch form.
             </p>
           </div>
           <div className=" w-full md:w-1/2">
