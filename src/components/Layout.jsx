@@ -8,6 +8,13 @@ import { Icon } from "@iconify/react";
 export default function Layout({ children }, props) {
   const [subMenu, setSubMenu] = useState("");
 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Function to toggle the mobile menu
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <>
       <Head>
@@ -34,7 +41,7 @@ export default function Layout({ children }, props) {
         ></div>
       )}
 
-      <nav className=" h-32 w-full flex justify-between items-center bg-white px-32 py-2 shadow-md fixed top-0 z-[999]  ">
+      <nav className=" h-32 w-full hidden md:flex justify-between items-center bg-white px-32 py-2 shadow-md fixed top-0 z-[999]  ">
         <Link className=" relative w-32 h-full" href="/">
           <div>
             <Image
@@ -103,6 +110,38 @@ export default function Layout({ children }, props) {
             </button>
           </Link>
         </div>
+      </nav>
+
+      <nav className="md:hidden flex w-full bg-white px-6 py-2 shadow-md fixed top-0 z-[999]">
+        <div className="flex justify-between items-center">
+          <Link href="/">
+            <div>
+              <Image src="/zestiot.svg" alt="logo" fill />
+            </div>
+          </Link>
+
+          {/* Hamburger Menu Icon */}
+          <div
+            className="cursor-pointer text-[#6F7073] font-medium"
+            onClick={toggleMobileMenu}
+          >
+            <Icon icon="iconamoon:menu" />
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="mt-4">
+            {/* Add your mobile menu items here */}
+            <Link href="/">
+              <div className="text-[#6F7073] font-medium py-2">Home</div>
+            </Link>
+            <Link href="/about">
+              <div className="text-[#6F7073] font-medium py-2">About</div>
+            </Link>
+            {/* Add more mobile menu items as needed */}
+          </div>
+        )}
       </nav>
 
       {children}

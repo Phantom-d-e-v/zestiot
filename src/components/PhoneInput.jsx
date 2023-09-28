@@ -11,7 +11,7 @@ function PhoneInputComponent() {
           height: "100%",
           border: "1px solid #ccc",
           outline: "none",
-          paddingLeft: "10px",
+          paddingLeft: "50px",
         }}
         containerStyle={{
           display: "flex",
@@ -21,7 +21,7 @@ function PhoneInputComponent() {
         dropdownStyle={{
           width: "auto",
           border: "1px solid #ccc",
-          zIndex: 10, // Adjust the z-index as needed
+          zIndex: 10,
         }}
       />
     </div>

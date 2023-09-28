@@ -11,22 +11,22 @@ export default function Home() {
         <div className="  h-fit ">
           <h1
             style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className=" m-auto mb-5  mt-10 px-3 text-4xl md:text-5xl lg:text-6xl text-[#fff]  font-bold lg:max-w-4xl md:max-w-3xl text-left"
+            className=" m-auto mb-5  mt-10 px-3 text-4xl md:text-5xl leading-normal lg:text-7xl text-[#fff]  font-semibold lg:max-w-6xl md:max-w-3xl text-left"
           >
             Connecting People, Places, Assets and Operations.
           </h1>
           <p
             style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className=" mb-24 px-3  z-10 text-base md:text-lg lg:text-2xl  text-[#fff]   max-w-4xl text-left"
+            className=" mb-24 px-3  z-10 text-base md:text-lg font-normal leading-normal lg:text-2xl  text-[#fff]   max-w-4xl text-left"
           >
-            Our solutions transform business operations for key industries like:
-            <b>Aviation, Oil & Gas, Manufacturing and F&B.</b>
+            Transforming Airport & Airlines Operations Plan, enabling real time
+            prediction driven decision making and 100% Operations Coverage.
           </p>
         </div>
 
         {/* import video here class absolute  */}
 
-        {/* <video
+        <video
           loop
           autoPlay
           muted
@@ -34,19 +34,13 @@ export default function Home() {
           alt="hero"
           src="/HomepageVideo.m4v"
           type="video/mp4"
-        ></video> */}
-
-        <img
-          className=" -z-10 absolute w-full h-[575px] object-cover"
-          src="/MainSection.png"
-          alt="hero"
-        />
+        ></video>
 
         {/* <video  /> */}
       </section>
 
       <Animation delay="0.2s">
-        <div className=" w-full mt-10">
+        <div className=" w-full mt-16 md:block hidden">
           <svg
             viewBox="0 0 1921 36"
             fill="none"
@@ -66,12 +60,17 @@ export default function Home() {
             <line x1="1202" y1="17.5" x2="1921" y2="17.5" stroke="black" />
           </svg>
         </div>
+        <div>
+          <h2 className=" w-full text-center mt-16 text-2xl block md:hidden font-semibold pb-5 text-primary-100">
+            Industries We Serve
+          </h2>
+        </div>
       </Animation>
 
       <>
-        <section className=" mt-10 w-full  px-2 m-auto  max-w-7xl justify-center  grid gap-2 grid-cols-2 lg:grid-cols-4 ">
+        <section className=" mt-10 max-w-[1500px] px-2 m-auto   justify-center  grid gap-2 md:gap-40 max-md:px-24 md:grid-cols-2 lg:grid-cols-4 ">
           <Animation delay="0.2s">
-            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 110 82"
@@ -84,21 +83,24 @@ export default function Home() {
                 />
               </svg>
 
-              <div>
+              <div className=" pl-3 pt-5">
                 <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
                   AVIATION
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
                   Ground Radar uses IoT and CameraAI to digitise & automate 100+
-                  ground operations. It enhances predictability, accelerates
-                  decision-making, and optimises turn time sequences,
-                  effectively identifying and resolving issues.
+                  ground operations.
+                  <br />
+                  It enhances predictability, accelerates decision-making, and
+                  optimises turn time sequences, effectively identifying and
+                  <br />
+                  resolving issues.
                 </p>
               </div>
             </div>
           </Animation>
           <Animation delay="0.4s">
-            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 101 90"
@@ -111,7 +113,7 @@ export default function Home() {
                 />
               </svg>
 
-              <div>
+              <div className=" pl-3 pt-5">
                 <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
                   MANUFACTURING
                 </h2>
@@ -125,7 +127,7 @@ export default function Home() {
             </div>
           </Animation>
           <Animation delay="0.6s">
-            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 102 100"
@@ -144,7 +146,7 @@ export default function Home() {
                 </g>
               </svg>
 
-              <div>
+              <div className=" pl-3 pt-5">
                 <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
                   OIL & GAS
                 </h2>
@@ -158,7 +160,7 @@ export default function Home() {
             </div>
           </Animation>
           <Animation delay="0.8s">
-            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 90 90"
@@ -187,7 +189,7 @@ export default function Home() {
                 />
               </svg>
 
-              <div>
+              <div className=" pl-3 pt-5">
                 <h2 className="w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl">
                   FOOD & BEVERAGES
                 </h2>
@@ -260,7 +262,7 @@ export default function Home() {
       </section>
 
       <Animation delay="0.2s">
-        <div className=" w-full mt-10">
+        <div className=" w-full mt-10 md:block hidden">
           <svg
             viewBox="0 0 1920 38"
             fill="none"
@@ -296,17 +298,74 @@ export default function Home() {
             <line x1="1050" y1="20.5" x2="1174" y2="20.5" stroke="black" />
           </svg>
         </div>
+        <div className="w-full">
+          <div className="flex items-center md:hidden justify-center">
+            <svg
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 text-primary-100"
+            >
+              <path
+                d="M24.8261 0.601099L0 5L11.9963 11.0258L15.4393 24.0014L24.8261 0.601099Z"
+                fill="#0021FF"
+              />
+            </svg>
+
+            <h2 className="ml-2 text-2xl font-semibold text-primary-100">
+              Industries We Serve
+            </h2>
+          </div>
+        </div>
+        <div className="w-full mt-10">
+          <div className="flex items-center md:hidden justify-center">
+            <svg
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 text-primary-100"
+            >
+              <path
+                d="M24.8261 0.601099L0 5L11.9963 11.0258L15.4393 24.0014L24.8261 0.601099Z"
+                fill="#0021FF"
+              />
+            </svg>
+
+            <h2 className="ml-2 text-2xl font-semibold text-primary-100">
+              Definitive ROI
+            </h2>
+          </div>
+        </div>
+        <div className="w-full mt-10">
+          <div className="flex items-center md:hidden justify-center">
+            <svg
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 text-primary-100"
+            >
+              <path
+                d="M24.8261 0.601099L0 5L11.9963 11.0258L15.4393 24.0014L24.8261 0.601099Z"
+                fill="#0021FF"
+              />
+            </svg>
+
+            <h2 className="ml-2 text-2xl font-semibold text-primary-100">
+              High degree of operational Efficiency
+            </h2>
+          </div>
+        </div>
       </Animation>
 
       <Animation delay="0.2s">
         <section className=" mt-40  text-secondary-300 w-full  m-auto flex flex-col  gap-10 p-2 px-5 items-center ">
-          <div className=" text-secondary-300 max-w-[1480px] font-normal leading-normal lg:text-[32px] md:text-3xl text-justify text-lg">
+          <div className=" text-secondary-300 max-w-[1480px] font-normal leading-normal lg:text-[32px] md:text-3xl text-left text-lg">
             ZestIoT is an IoT/AI powered connected operations platform
             empowering businesses with proactive decision making and
             predictability in Operations.
             <br />
             <br />
-            <span className=" font-light text-base md:text-xl ">
+            <span className=" font-light text-base text-left leading-normal md:text-xl ">
               We offer rapid, tech-forward solutions featuring customized UI/UX,
               enhancing resource management, operational safety, and product
               quality assessment.
@@ -324,6 +383,21 @@ export default function Home() {
 
       <div className=" relative flex overflow-x-hidden bg-primary-100  overflow-hidden">
         <div className=" py-12 animate-marquee whitespace-nowrap text-white text-3xl md:text-4xl lg:text-5xl font-light ">
+          <span className=" w-1"> </span>
+          <span> RUNNING LIVE : </span>
+          <span className="font-bold">800</span>
+          <span> FLIGHTS | </span>
+          <span className="font-bold"> 9000</span>
+          <span> MANPOWER | </span>
+          <span className="font-bold"> 800</span>
+          <span> EQUIPMENTS </span>
+          <span> RUNNING LIVE : </span>
+          <span className="font-bold">800</span>
+          <span> FLIGHTS | </span>
+          <span className="font-bold"> 9000</span>
+          <span> MANPOWER | </span>
+          <span className="font-bold"> 800</span>
+          <span> EQUIPMENTS </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -333,7 +407,22 @@ export default function Home() {
           <span> EQUIPMENTS </span>
         </div>
 
-        <div className=" absolute top-0 py-12 animate-marquee2 whitespace-nowrap   text-white text-3xl md:text-4xl lg:text-5xl font-light ">
+        <div className=" absolute top-0 py-12 animate-marquee2 whitespace-nowrap text-white text-3xl md:text-4xl lg:text-5xl font-light ">
+          <span className=" w-1"></span>
+          <span> RUNNING LIVE : </span>
+          <span className="font-bold">800</span>
+          <span> FLIGHTS | </span>
+          <span className="font-bold"> 9000</span>
+          <span> MANPOWER | </span>
+          <span className="font-bold"> 800</span>
+          <span> EQUIPMENTS </span>
+          <span> RUNNING LIVE : </span>
+          <span className="font-bold">800</span>
+          <span> FLIGHTS | </span>
+          <span className="font-bold"> 9000</span>
+          <span> MANPOWER | </span>
+          <span className="font-bold"> 800</span>
+          <span> EQUIPMENTS </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -350,7 +439,7 @@ export default function Home() {
             <h2 className=" w-full text-center text-5xl md:text-7xl font-semibold pb-5 text-primary-100">
               Customer Stories
             </h2>
-            <p className=" text-center w-full font-normal md:text-[32px] text-2xl mt-10 mb-28 ">
+            <p className=" text-center w-full leading-normal font-normal md:text-[32px] text-2xl mt-10 mb-28 ">
               Don’t just take our word for it ! Hear from our satisfied
               customers who have experienced the transformative power of our IoT
               solutions firsthand.
@@ -543,7 +632,7 @@ export default function Home() {
 
           <div className="max-w-[1480px]">
             <Animation delay="0.2s">
-              <p className="text-secondary-300 font-normal mb-20 pt-14 text-justify  md:text-[32px] text-2xl">
+              <p className="text-secondary-300 font-normal mb-20 pt-14 text-left leading-normal md:text-[32px] text-2xl">
                 Our Commitment to Innovation, Reliability, and Customer-focused
                 solutions is our key differentiator.
               </p>
@@ -556,37 +645,37 @@ export default function Home() {
               <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 90 61"
                     fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M47.1197 19.4243C42.6988 20.0492 38.8374 24.1997 38.8001 24.237C38.7446 24.2946 38.6819 24.3447 38.6136 24.3863C32.607 28.2849 29.2213 25.319 29.0814 25.1417C25.2387 21.6814 28.7643 15.8801 28.9136 15.6376C30.4876 13.0214 32.3937 10.62 34.5843 8.49316H18.2715L11.1924 31.8478C11.2684 31.89 11.3376 31.9434 11.3976 32.0064C22.3847 44.4298 36.972 55.4543 42.7268 59.6141C43.3256 60.057 44.0704 60.2558 44.8104 60.1705C45.5503 60.0851 46.2302 59.7218 46.7125 59.1542C47.1948 58.5866 47.4435 57.8569 47.4083 57.1129C47.3731 56.3689 47.0566 55.666 46.5228 55.1465L38.6042 47.2279C38.4305 47.0532 38.333 46.8168 38.333 46.5704C38.333 46.324 38.4305 46.0876 38.6042 45.9128C38.691 45.8254 38.7941 45.756 38.9078 45.7087C39.0214 45.6613 39.1433 45.6369 39.2665 45.6369C39.3896 45.6369 39.5115 45.6613 39.6252 45.7087C39.7388 45.756 39.842 45.8254 39.9287 45.9128L44.1444 50.1286L47.8752 53.8594L49.7406 55.7714C50.4098 56.4232 51.3076 56.7869 52.2417 56.7846C53.1758 56.7823 54.0719 56.4142 54.7379 55.7592C55.4039 55.1042 55.7868 54.2144 55.8046 53.2804C55.8224 52.3465 55.4737 51.4427 54.8331 50.7628L47.5674 43.18L46.187 41.753C46.0996 41.6663 46.0302 41.5632 45.9829 41.4495C45.9355 41.3358 45.9112 41.2139 45.9112 41.0908C45.9112 40.9677 45.9355 40.8458 45.9829 40.7321C46.0302 40.6185 46.0996 40.5153 46.187 40.4286C46.2738 40.3412 46.3769 40.2718 46.4906 40.2244C46.6042 40.1771 46.7261 40.1527 46.8493 40.1527C46.9724 40.1527 47.0943 40.1771 47.208 40.2244C47.3216 40.2718 47.4248 40.3412 47.5115 40.4286L58.1162 51.4344C58.6297 51.9426 59.2797 52.2908 59.9874 52.4366C60.695 52.5825 61.4297 52.5198 62.1024 52.256C62.775 51.9923 63.3566 51.539 63.7765 50.951C64.1964 50.3631 64.4366 49.6659 64.4678 48.9441C64.4833 48.4356 64.3917 47.9295 64.1988 47.4587C64.006 46.9879 63.7163 46.5629 63.3486 46.2113L56.9876 40.0555L52.5573 35.7558C52.4587 35.6735 52.3782 35.5717 52.3207 35.4569C52.2632 35.342 52.2301 35.2165 52.2234 35.0882C52.2167 34.96 52.2366 34.8317 52.2818 34.7115C52.327 34.5912 52.3965 34.4816 52.486 34.3895C52.5756 34.2974 52.6832 34.2248 52.8021 34.1762C52.921 34.1276 53.0486 34.1041 53.177 34.1072C53.3054 34.1102 53.4318 34.1398 53.5483 34.194C53.6647 34.2481 53.7687 34.3258 53.8538 34.422L66.4451 46.6124C66.7754 46.9515 67.1708 47.2203 67.6077 47.4026C68.0446 47.5849 68.5139 47.6768 68.9872 47.6728C69.4606 47.6688 69.9283 47.5691 70.362 47.3796C70.7958 47.19 71.1867 46.9146 71.5112 46.57C71.8357 46.2253 72.0871 45.8185 72.2502 45.3741C72.4132 44.9297 72.4847 44.4569 72.4601 43.9841C72.4356 43.5114 72.3156 43.0485 72.1073 42.6234C71.8991 42.1983 71.607 41.8197 71.2485 41.5105L47.1197 19.4243Z"
+                      d="M47.1188 19.4234C42.6978 20.0483 38.8364 24.1987 38.7991 24.2361C38.7436 24.2936 38.6809 24.3437 38.6126 24.3853C32.6061 28.2839 29.2204 25.318 29.0805 25.1408C25.2378 21.6805 28.7634 15.8791 28.9126 15.6366C30.4866 13.0204 32.3927 10.619 34.5834 8.49219H18.2706L11.1914 31.8468C11.2674 31.889 11.3366 31.9424 11.3966 32.0054C22.3837 44.4289 36.9711 55.4533 42.7258 59.6131C43.3247 60.056 44.0694 60.2549 44.8094 60.1695C45.5493 60.0841 46.2292 59.7208 46.7115 59.1532C47.1938 58.5856 47.4425 57.856 47.4073 57.1119C47.3721 56.3679 47.0556 55.665 46.5218 55.1455L38.6033 47.2269C38.4296 47.0522 38.3321 46.8158 38.3321 46.5694C38.3321 46.323 38.4296 46.0866 38.6033 45.9119C38.69 45.8244 38.7931 45.755 38.9068 45.7077C39.0204 45.6603 39.1424 45.636 39.2655 45.636C39.3886 45.636 39.5105 45.6603 39.6242 45.7077C39.7378 45.755 39.841 45.8244 39.9277 45.9119L44.1435 50.1276L47.8742 53.8584L49.7396 55.7704C50.4088 56.4222 51.3066 56.7859 52.2408 56.7836C53.1749 56.7813 54.0709 56.4133 54.7369 55.7583C55.4029 55.1032 55.7858 54.2134 55.8036 53.2795C55.8214 52.3455 55.4727 51.4418 54.8321 50.7619L47.5665 43.1791L46.1861 41.752C46.0986 41.6653 46.0293 41.5622 45.9819 41.4485C45.9346 41.3349 45.9102 41.213 45.9102 41.0898C45.9102 40.9667 45.9346 40.8448 45.9819 40.7311C46.0293 40.6175 46.0986 40.5143 46.1861 40.4276C46.2728 40.3402 46.3759 40.2708 46.4896 40.2235C46.6032 40.1761 46.7252 40.1517 46.8483 40.1517C46.9714 40.1517 47.0933 40.1761 47.207 40.2235C47.3206 40.2708 47.4238 40.3402 47.5105 40.4276L58.1152 51.4334C58.6287 51.9416 59.2788 52.2898 59.9864 52.4357C60.694 52.5815 61.4287 52.5188 62.1014 52.2551C62.774 51.9913 63.3556 51.538 63.7755 50.9501C64.1954 50.3621 64.4356 49.6649 64.4669 48.9431C64.4823 48.4346 64.3907 47.9285 64.1979 47.4577C64.005 46.9869 63.7154 46.5619 63.3476 46.2103L56.9867 40.0545L52.5564 35.7548C52.4577 35.6725 52.3772 35.5708 52.3197 35.4559C52.2623 35.341 52.2291 35.2155 52.2224 35.0872C52.2158 34.959 52.2356 34.8307 52.2808 34.7105C52.326 34.5903 52.3955 34.4807 52.4851 34.3886C52.5746 34.2965 52.6822 34.2238 52.8011 34.1752C52.92 34.1267 53.0476 34.1032 53.176 34.1062C53.3044 34.1093 53.4308 34.1388 53.5473 34.193C53.6638 34.2472 53.7678 34.3248 53.8528 34.4211L66.4442 46.6114C66.7744 46.9506 67.1699 47.2194 67.6067 47.4016C68.0436 47.5839 68.5129 47.6758 68.9863 47.6718C69.4596 47.6679 69.9273 47.5681 70.3611 47.3786C70.7948 47.189 71.1858 46.9136 71.5103 46.569C71.8348 46.2243 72.0861 45.8175 72.2492 45.3731C72.4123 44.9287 72.4837 44.4559 72.4591 43.9832C72.4346 43.5104 72.3146 43.0475 72.1064 42.6224C71.8981 42.1973 71.606 41.8187 71.2475 41.5095L47.1188 19.4234Z"
                       fill="#0021FF"
                     />
                     <path
-                      d="M15.4268 3.02808C10.5848 0.851205 5.30501 -0.176654 0 0.0248057V36.605H5.69876C6.30697 36.6065 6.89909 36.4097 7.38547 36.0445C7.87184 35.6793 8.22597 35.1656 8.39424 34.5811L16.9564 6.38578C17.1521 5.73579 17.1048 5.03682 16.8234 4.41909C16.542 3.80135 16.0456 3.30698 15.4268 3.02808Z"
+                      d="M15.4268 3.02808C10.5848 0.851205 5.30501 -0.176654 0 0.0248057V36.605H5.69876C6.30697 36.6065 6.89909 36.4097 7.38547 36.0445C7.87184 35.6793 8.22597 35.1656 8.39424 34.5811L16.9564 6.38578C17.1521 5.73579 17.1048 5.03682 16.8234 4.41908C16.542 3.80135 16.0456 3.30698 15.4268 3.02808Z"
                       fill="#0021FF"
                     />
                     <path
-                      d="M50.1418 4.83706C48.1304 4.00909 45.8829 3.95922 43.8368 4.69715C40.2646 6.00292 35.0508 9.13677 30.4713 16.617C30.4713 16.6729 27.6079 21.2804 30.3034 23.7614C30.3967 23.8454 32.803 25.86 37.4665 22.8847C38.138 22.1852 42.3445 17.9694 47.3158 17.5124C47.4443 17.5016 47.5736 17.5176 47.6956 17.5593C47.8176 17.601 47.9296 17.6676 48.0246 17.7549L72.4705 40.1395C72.5824 40.2421 72.685 40.354 72.7876 40.4659C75.5857 40.0369 77.4511 37.4813 77.992 36.5486L69.1315 12.4012L50.1418 4.83706Z"
+                      d="M50.1428 4.83901C48.1314 4.01104 45.8839 3.96117 43.8378 4.69911C40.2656 6.00488 35.0518 9.13873 30.4723 16.6189C30.4723 16.6749 27.6089 21.2824 30.3044 23.7634C30.3977 23.8473 32.804 25.8619 37.4675 22.8866C38.139 22.1871 42.3455 17.9713 47.3167 17.5143C47.4452 17.5035 47.5746 17.5195 47.6966 17.5613C47.8186 17.603 47.9306 17.6696 48.0256 17.7568L72.4715 40.1415C72.5834 40.2441 72.686 40.356 72.7886 40.4679C75.5867 40.0389 77.4521 37.4833 77.993 36.5506L69.1324 12.4032L50.1428 4.83901Z"
                       fill="#0021FF"
                     />
                     <path
-                      d="M87.673 4.47357C82.3531 4.43824 77.0765 5.43274 72.1344 7.40222C71.4698 7.68705 70.9412 8.2181 70.6595 8.88406C70.3778 9.55001 70.3649 10.2992 70.6234 10.9744L81.0043 39.2257C81.2069 39.7707 81.5707 40.2411 82.0472 40.5743C82.5237 40.9075 83.0903 41.0878 83.6718 41.0911H89.5384V4.5202C89.0721 4.49222 88.4285 4.47357 87.673 4.47357Z"
+                      d="M87.6721 4.47357C82.3521 4.43824 77.0755 5.43274 72.1334 7.40222C71.4688 7.68705 70.9402 8.2181 70.6585 8.88406C70.3769 9.55001 70.3639 10.2992 70.6224 10.9744L81.0033 39.2257C81.206 39.7707 81.5697 40.2411 82.0462 40.5743C82.5227 40.9075 83.0894 41.0878 83.6708 41.0911H89.5375V4.5202C89.0711 4.49222 88.4276 4.47357 87.6721 4.47357Z"
                       fill="#0021FF"
                     />
                   </svg>
                 </div>
-                <h2 className=" text-primary-100 font-bold lg:text-2xl md:text-xl text-lg">
+                <h2 className=" text-primary-100 mt-5 font-bold lg:text-2xl md:text-xl text-lg">
                   TRUST & RELIABILITY
                 </h2>
-                <p className=" text-justify pt-8 text-[#1B1B1B] font-bold lg:text-xl md:text-lg text-base">
-                  You can count on us to deliver high-quality, reliable
-                  solutions that meet your needs. We take pride in our work and
-                  stand with you all through to make it work for you
+                <p className=" text-left pt-8 text-secondary-300 font-normal leading-normal lg:text-xl md:text-lg text-base">
+                  Count on us for dependable and tailored solutions that exceed
+                  your expectations. Our commitment to excellence means we will
+                  be there for you every step of the way, ensuring your success.
                   <br /> <br />
-                  <span className=" font-medium">
+                  <span className=" font-semibold">
                     Domain Expertise | Responsiveness | Successful Track Record
                     | Turnaround Speed | Consistency
                   </span>
@@ -619,17 +708,17 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h2 className=" text-primary-100 font-bold lg:text-2xl md:text-xl text-lg">
+                <h2 className=" text-primary-100 mt-5 font-bold lg:text-2xl md:text-xl text-lg">
                   PRIORITISING CLIENT EXPERIENCE
                 </h2>
-                <p className=" text-justify text-[#1B1B1B] font-bold lg:text-xl md:text-lg text-base">
+                <p className=" text-left pt-8 text-secondary-300 font-normal leading-normal lg:text-xl md:text-lg text-base">
                   We put our customers first in everything we do. From Pre-Sales
-                  Solutioning to Go-Live and ongoing support, we&apos;re here to
-                  help you succeed.
+                  Solutioning to Go-Live and ongoing support, we’re here to help
+                  you succeed.
                   <br /> <br />
-                  <span className=" font-medium">
+                  <span className=" font-semibold">
                     In depth understanding of Unique Client Problems & Resources
-                    | Proof of Value | Bespoke SolutionsÂ 
+                    | Proof of Value | Bespoke Solutions
                   </span>
                 </p>
               </div>
@@ -675,17 +764,16 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h2 className=" text-primary-100 font-bold lg:text-2xl md:text-xl text-lg">
+                <h2 className=" text-primary-100 mt-5 font-bold lg:text-2xl md:text-xl text-lg">
                   EFFICIENT INNOVATION
                 </h2>
-                <p className=" text-justify text-[#1B1B1B] font-semibold lg:text-xl md:text-lg text-base">
-                  We constantly push boundaries to solve our customerâ€™s
-                  problems; continuously innovating with
-                  possibilitiespossiblities of IOT technology. Our solutions
-                  have a single minded focus to help customers stay ahead of the
-                  curve to achieve operational efficiency in their business
+                <p className=" text-left pt-8 text-secondary-300 font-normal leading-normal lg:text-xl md:text-lg text-base">
+                  We strive to solve customer problems and innovate with IoT
+                  technology.
+                  <br /> Our solutions focus on helping customers stay ahead and
+                  achieve operational efficiency in their business.
                   <br /> <br />
-                  <span className=" font-medium">
+                  <span className=" font-semibold">
                     Investing in Research and Development | Delivering
                     Intelligent Integrated Tools | Enabling Greater Visibility
                     and Control
@@ -719,18 +807,18 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h2 className=" text-primary-100 font-bold lg:text-2xl md:text-xl text-lg">
+                <h2 className=" text-primary-100 mt-5 font-bold lg:text-2xl md:text-xl text-lg">
                   ADAPTABILITY
                 </h2>
-                <p className=" text-justify text-[#1B1B1B] font-semibold lg:text-xl md:text-lg text-base">
-                  We understand that every business has unique needs and
-                  challenges. That&apos;s why we work closely with our customers
-                  to develop solutions that are tailored to address their
-                  business challenges and deliver on ROI
+                <p className=" text-left pt-8 text-secondary-300 font-normal leading-normal lg:text-xl md:text-lg text-base">
+                  We prioritize our customers, demonstrating adaptability in
+                  every aspect of our service. From pre-sales solutioning to
+                  go-live and ongoing support, we’re here to flexibly tailor our
+                  solutions to ensure your success.
                   <br /> <br />
-                  <span className=" font-medium">
+                  <span className=" font-semibold">
                     Balancing multiple stakeholders for Collective Success |
-                    Agile Operations | Persistent yet Pragmatic ApproachÂ 
+                    Agile Operations | Persistent yet Pragmatic Approach 
                   </span>
                 </p>
               </div>
@@ -745,11 +833,179 @@ export default function Home() {
             <h2 className="w-full text-center text-5xl md:text-7xl font-semibold pb-5 text-primary-100">
               Awards & Recognition.
             </h2>
-            <p className=" text-center w-full font-normal md:text-[32px] text-2xl mt-10 mb-28">
+            <p className=" text-center w-full font-normal leading-normal md:text-[32px] text-2xl mt-10 mb-28">
               Our commitment to excellence has been recognized by industry
               experts and satisﬁed customers alike. Here are just a few examples
               of the awards we’ve won:
             </p>
+          </div>
+        </section>
+      </Animation>
+
+      <Animation delay="0.2s">
+        <section className=" flex flex-wrap w-full min-h-[452px] justify-center bg-primary-100">
+          <div className=" flex flex-wrap max-w-[1480px] h-fit py-12 justify-center ">
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Air india sats logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Bengaluru_Airport_Logo_ 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/BrusselsAirport 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/celebi logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Delhi airport 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Dubai_airports_logo_ 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/IndiGo_Airlines_logo_ 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/SpiceJet-Logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Bharat-Petroleum-logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Diageo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/hindustan zinc logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Hindustan_Petroleum_Logo_ 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/HOSPET 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/-Jindal_Steel_and_Power_Logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Rajiv_Gandhi_International_Airport_Logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Gatwick_Airport_logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/SAIL_Logo_ 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Saint-Gobain_logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Vedanta-Logo- 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/Jio-bp_logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/JSW_Group_logo_ 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/AirAsia_New_Logo 1.png"
+              alt="hero"
+            />
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
+              src="/customerLogos/P&G_logo 1.png"
+              alt="hero"
+            />
           </div>
         </section>
       </Animation>
@@ -760,7 +1016,7 @@ export default function Home() {
             <h2 className=" text-5xl md:text-7xl font-extrabold pb-5 text-primary-100">
               Get In Touch.
             </h2>
-            <p className="   font-medium lg:text-2xl md:text-2xl text-xl mt-10 mb-28 ">
+            <p className="   font-medium lg:text-2xl leading-normal md:text-2xl text-xl mt-10 mb-28 ">
               Partner with us and join the ranks of satisfied customers who have
               experienced the transformative power of our IOT solutions. Contact
               us today to learn more and fill out our get in touch form.
