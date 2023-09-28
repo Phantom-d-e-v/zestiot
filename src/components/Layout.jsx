@@ -6,12 +6,33 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 export default function Layout({ children }, props) {
+  const [subMenu, setSubMenu] = useState("");
+
   return (
     <>
       <Head>
         <title>ZESTIOT</title>
         <meta property="og:title" content={`${props.title}`} key="title" />
       </Head>
+
+      {subMenu === "what" && (
+        <div
+          onMouseOut={() => setSubMenu("")}
+          className=" fixed top-32 h-40 bg-primary-100 w-full z-[99999]"
+        ></div>
+      )}
+      {subMenu === "products" && (
+        <div
+          onMouseOut={() => setSubMenu("")}
+          className=" fixed top-32 h-40 bg-primary-100 w-full z-[99999]"
+        ></div>
+      )}
+      {subMenu === "resources" && (
+        <div
+          onMouseOut={() => setSubMenu("")}
+          className=" fixed top-32 h-40 bg-primary-100 w-full z-[99999]"
+        ></div>
+      )}
 
       <nav className=" h-32 w-full flex justify-between items-center bg-white px-32 py-2 shadow-md fixed top-0 z-[999]  ">
         <Link className=" relative w-32 h-full" href="/">
@@ -26,25 +47,59 @@ export default function Layout({ children }, props) {
         </Link>
 
         <div className="flex gap-1 ">
-          <Link href="/">
-            <button className=" h-12 px-11 lg:block hidden font-medium text-secondary-300 text-xl bg-[#C8c8c8] ">
-              What we do
-            </button>
-          </Link>
+          <div
+            onClick={
+              subMenu === "what"
+                ? () => setSubMenu("")
+                : () => setSubMenu("what")
+            }
+            className=" cursor-pointer mt-2 lg:flex hidden px-5 text-[#6F7073] font-medium items-center gap-1 "
+          >
+            What we do
+            <span>
+              <Icon
+                icon="iconamoon:arrow-right-2"
+                rotate={subMenu === "what" ? 1 : "0"}
+              />
+            </span>
+          </div>
 
-          <div className="mt-2 lg:flex hidden px-11 text-[#6F7073] items-center font-medium gap-1">
-            Products
+          <div
+            onClick={
+              subMenu === "products"
+                ? () => setSubMenu("")
+                : () => setSubMenu("products")
+            }
+            className=" cursor-pointer mt-2 lg:flex hidden px-5 text-[#6F7073] font-medium items-center  gap-1"
+          >
+            Company
+            <span>
+              <Icon
+                icon="iconamoon:arrow-right-2"
+                rotate={subMenu === "products" ? 1 : "0"}
+              />
+            </span>
           </div>
-          <div className="mt-2 lg:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
-            Solutions
-          </div>
-          <div className="mt-2 lg:flex hidden px-11 text-[#6F7073] font-medium items-center gap-1">
-            Demo
+          <div
+            onClick={
+              subMenu === "resources"
+                ? () => setSubMenu("")
+                : () => setSubMenu("resources")
+            }
+            className=" cursor-pointer mt-2 lg:flex hidden px-5 text-[#6F7073] font-medium items-center gap-1"
+          >
+            Resources
+            <span>
+              <Icon
+                icon="iconamoon:arrow-right-2"
+                rotate={subMenu === "resources" ? 1 : "0"}
+              />
+            </span>
           </div>
 
           <Link href="/">
             <button className=" rounded-md  lg:block hidden px-11 font-medium h-12 text-xl bg-primary-100 text-white ">
-              Get in touch
+              Book a Meeting
             </button>
           </Link>
         </div>
