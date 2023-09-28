@@ -931,8 +931,8 @@ export default function Home() {
             </h2>
             <p className=" font-normal lg:text-2xl leading-normal md:text-2xl text-xl mt-10 mb-28 ">
               Partner with us and join the ranks of satisfied customers who have
-              experienced the transformative power of our IOT solutions. Contact
-              us today to learn more and fill out our get in touch form.
+              experienced the transformative power of our IoT solutions. Contact
+              us today to book a meeting.
             </p>
           </div>
           <div className=" w-full p-3 py-0 md:py-16 md:w-1/2">
