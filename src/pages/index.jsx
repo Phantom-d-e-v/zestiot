@@ -7,20 +7,38 @@ import PhoneInput from "@/components/PhoneInput";
 export default function Home() {
   return (
     <main>
-      <section className="h-[575px] relative w-full flex items-center flex-col justify-end  ">
-        <div className="  h-fit ">
+      <section className="h-[575px] relative w-full flex justify-center flex-col  ">
+        <div className="  h-fit w-full ">
           <h1
             style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className=" m-auto mb-5  mt-10 px-3 text-4xl md:text-5xl leading-normal lg:text-7xl text-[#fff]  font-semibold lg:max-w-6xl md:max-w-3xl text-left"
+            className=" md:block hidden  mb-5  mt-10 pl-5 md:pl-60 px-3 text-4xl md:text-5xl leading-tight md:leading-normal lg:text-7xl text-[#fff]  font-semibold lg:max-w-6xl text-left"
           >
-            Connecting People, Places, Assets and Operations.
+            Transforming
+            <br className="block md:hidden" /> Airport &<br /> Airlines
+            <br className="block md:hidden" />
+            Operations
+            <br className="block md:hidden" /> Plan
+          </h1>
+          <h1
+            style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
+            className=" block md:hidden  mb-5  mt-10 px-3 text-4xl pl-5 md:text-5xl  lg:text-7xl text-[#fff]  font-semibold lg:max-w-6xl  text-left"
+          >
+            Transforming
+            <br />
+            Airport &<br />
+            Airlines
+            <br />
+            Operations
+            <br />
+            Plan
           </h1>
           <p
             style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className=" mb-24 px-3  z-10 text-base md:text-lg font-normal leading-normal lg:text-2xl  text-[#fff]   max-w-4xl text-left"
+            className=" mb-24 px-3  z-10 text-base md:pl-60 pl-5 md:text-lg font-normal leading-normal lg:text-2xl  text-[#fff]  max-w-4xl text-left"
           >
-            Transforming Airport & Airlines Operations Plan, enabling real time
-            prediction driven decision making and 100% Operations Coverage.
+            Enabling real time prediction driven decision making and
+            <br className="block md:hidden" />
+            100% Operations Coverage.
           </p>
         </div>
 
@@ -84,7 +102,7 @@ export default function Home() {
               </svg>
 
               <div className=" pl-3 pt-5">
-                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
+                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl   ">
                   AVIATION
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
@@ -114,7 +132,7 @@ export default function Home() {
               </svg>
 
               <div className=" pl-3 pt-5">
-                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
+                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl   ">
                   MANUFACTURING
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
@@ -147,7 +165,7 @@ export default function Home() {
               </svg>
 
               <div className=" pl-3 pt-5">
-                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
+                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl   ">
                   OIL & GAS
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
@@ -190,7 +208,7 @@ export default function Home() {
               </svg>
 
               <div className=" pl-3 pt-5">
-                <h2 className="w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl">
+                <h2 className="w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl ">
                   FOOD & BEVERAGES
                 </h2>
                 <p className=" pr-6 text-secondary-300 text-left text-sm md:text-base">
@@ -205,7 +223,7 @@ export default function Home() {
         </section>
       </>
 
-      <section className="w-full py-14 mt-10 md:mt-32 ">
+      <section className="w-full mt-20 ">
         <div className="grid grid-cols-3 w-full max-w-7xl m-auto justify-around items-center">
           <div
             className={`flex flex-col relative gap-2 text-secondary-300 justify-center items-center `}
@@ -265,7 +283,7 @@ export default function Home() {
       </section>
 
       <Animation delay="0.2s">
-        <div className=" w-full mt-10 md:block hidden">
+        <div className=" w-full mt-20 md:block hidden">
           <svg
             viewBox="0 0 1920 38"
             fill="none"
@@ -301,7 +319,7 @@ export default function Home() {
             <line x1="1050" y1="20.5" x2="1174" y2="20.5" stroke="black" />
           </svg>
         </div>
-        <div className="w-full">
+        <div className="w-full mt-10">
           <div className="flex items-center md:hidden justify-center">
             <svg
               viewBox="0 0 25 25"
@@ -378,9 +396,11 @@ export default function Home() {
       </Animation>
 
       <Animation delay="0.2s">
-        <section className="">
+        <section>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <video
+
+          <img className="w-full" src="/successMetric.png" alt="sm" />
+          {/* <video
             loop
             autoPlay
             muted
@@ -388,7 +408,7 @@ export default function Home() {
             alt="hero"
             src="/Waves V01-1.m4v"
             type="video/mp4"
-          ></video>
+          ></video> */}
         </section>
       </Animation>
 
@@ -637,7 +657,7 @@ export default function Home() {
         <div className=" px-3 max-w-7xl m-auto">
           <Animation delay="0.2s">
             <h2 className=" text-6xl md:text-8xl pt-32 font-semibold pb-2 text-primary-100">
-              Why ZestIOT.
+              Why ZestIOT
             </h2>
           </Animation>
 
@@ -645,7 +665,8 @@ export default function Home() {
             <Animation delay="0.2s">
               <p className="text-secondary-300 font-normal mb-20 pt-14 text-left leading-normal md:text-[32px] text-2xl">
                 Our Commitment to Innovation, Reliability, and Customer-focused
-                solutions is our key differentiator.
+                solutions is our
+                <br /> key differentiator.
               </p>
             </Animation>
           </div>
@@ -720,7 +741,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h2 className=" text-primary-100 mt-5 font-bold lg:text-2xl md:text-xl text-lg">
-                  PRIORITISING CLIENT EXPERIENCE
+                  CLIENT EXPERIENCE
                 </h2>
                 <p className=" text-left pt-8 text-secondary-300 font-normal leading-normal lg:text-xl md:text-lg text-base">
                   We put our customers first in everything we do. From Pre-Sales
@@ -842,19 +863,19 @@ export default function Home() {
         <section className=" ">
           <div className=" px-3 max-w-7xl m-auto">
             <h2 className="w-full text-center text-5xl md:text-7xl font-semibold pb-5 text-primary-100">
-              Awards & Recognition.
+              Awards & Recognition
             </h2>
             <p className=" text-center w-full font-normal leading-normal md:text-[32px] text-2xl mt-10 mb-28">
               Our commitment to excellence has been recognized by industry
-              experts and satisﬁed customers alike. Here are just a few examples
-              of the awards we’ve won:
+              experts and satisfied customers alike. Here are just a few
+              examples of the awards we’ve won:
             </p>
           </div>
         </section>
       </Animation>
 
       <Animation delay="0.2s">
-        <section className=" flex flex-wrap w-full min-h-[425px] justify-center bg-primary-100">
+        <section className=" flex flex-wrap w-full min-h-[300px] justify-center bg-primary-100">
           <div className=" flex flex-wrap max-w-[1480px] h-fit py-12 justify-center ">
             <Image
               className="  object-contain  px-7"
@@ -903,7 +924,7 @@ export default function Home() {
       </Animation>
 
       <Animation delay="0.2s">
-        <section className=" flex p-3 py-16 items-center max-w-6xl gap-3 flex-col md:flex-row m-auto">
+        <section className=" flex p-3 py-5 md:py-16 items-center max-w-6xl gap-0 md:gap-20 flex-col md:flex-row m-auto">
           <div className=" w-full  md:w-1/2">
             <h2 className=" text-5xl md:text-7xl font-semibold lead pb-5 text-primary-100">
               Get In Touch
@@ -921,33 +942,41 @@ export default function Home() {
               method="post"
               enctype="text/plain"
             >
+              <div className=" flex w-full flex-col md:flex-row">
+                <input
+                  className="  px-4 mr-0 mb-1.5 md:mb-0 md:mr-5  h-[50px] text-[#000000] border rounded-[10px] outline-none border-secondary-200"
+                  type="text"
+                  placeholder="First name*"
+                  name="name"
+                />
+                <input
+                  className=" px-4 ml-0 mt-2 md:mt-0 md:ml-5  h-[50px] text-[#000000] border rounded-[10px]  outline-none border-secondary-200"
+                  type="text"
+                  placeholder="Surname*"
+                  name="surname"
+                />
+              </div>
               <input
-                className=" px-4 w-full h-[50px] border outline-none border-secondary-200"
+                className=" px-4 w-full h-[50px] text-[#000000] border rounded-[10px] outline-none border-secondary-200"
                 type="text"
-                placeholder="Name"
-                name="name"
+                placeholder="Company name*"
+                name="companyName"
               />
-
               <input
-                className=" px-4 w-full h-[50px] border outline-none border-secondary-200"
+                className=" px-4 w-full h-[50px] text-[#000000] border rounded-[10px] outline-none border-secondary-200"
                 type="text"
-                placeholder="Email"
+                placeholder="Business email*"
                 name="mail"
               />
               <PhoneInput />
               <input
-                className=" px-4 w-full h-[50px] border outline-none border-secondary-200"
+                className=" px-4 w-full h-[50px] text-[#000000] border rounded-[10px]  outline-none border-secondary-200"
                 type="text"
                 placeholder="Industry"
               />
-              <textarea
-                placeholder="I am interested in"
-                className=" px-4 py-4 w-full h-[220px] resize-none border outline-none border-secondary-200"
-                name="comment"
-              ></textarea>
 
               <input
-                className=" w-full h-[50px] bg-primary-100 hover:bg-primary-300 cursor-pointer text-white font-bold"
+                className=" w-full h-[50px] bg-primary-100 rounded-[10px] text-xl hover:bg-primary-300 cursor-pointer text-white font-medium"
                 type="submit"
                 value="BOOK A MEETING"
               />

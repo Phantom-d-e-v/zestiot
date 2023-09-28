@@ -172,7 +172,7 @@ export default function Layout({ children }, props) {
               <div className="mt-2 flex items-center gap-1">
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" /> Demo
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mt-1">
                 {" "}
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" />{" "}
                 Technology
@@ -185,12 +185,12 @@ export default function Layout({ children }, props) {
               <div className="mt-2 flex items-center gap-1">
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" /> Team
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mt-1">
                 {" "}
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" />
                 Career
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mt-1">
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" />
                 Partners
               </div>
@@ -202,12 +202,12 @@ export default function Layout({ children }, props) {
               <div className="mt-2 flex items-center gap-1">
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" /> Media
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mt-1">
                 {" "}
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" /> Case
                 Study
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mt-1">
                 <Icon icon="ep:arrow-right-bold" width="10" height="10" />
                 Blogs
               </div>
@@ -227,13 +227,24 @@ export default function Layout({ children }, props) {
               <div className="flex items-center gap-1 max-w-lg pt-5">
                 <Icon icon="carbon:location-filled" width="15" height="15" />{" "}
                 ZESTIOT TECHNOLOGIES B.V. , Steenovenweg 5,
-                <br /> 5708HN Helmond, NL
+                <br className="hidden md:block" /> 5708HN Helmond, NL
               </div>
             </div>
           </section>
         </section>
         <section className="mt-10 w-full text-center">
           © 2021 ZestIOT, All rights reserved.
+        </section>
+        <section className=" text-[#8C8C8C] text-base font-normal mt-5 w-full text-center">
+          Designed and developed by{" "}
+          <a href="https://www.sfurti.net" className=" underline">
+            Studio Raada
+          </a>
+          , in partnership with{" "}
+          <a href="https://www.angle.services" className=" underline">
+            Angle
+          </a>
+          .
         </section>
       </footer>
     </>

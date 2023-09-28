@@ -4,24 +4,32 @@ import PhoneInput from "react-phone-input-2";
 
 function PhoneInputComponent() {
   return (
-    <div className="relative w-full h-[50px]">
+    <div className="relative w-full rounded-[10px] ">
       <PhoneInput
         inputStyle={{
           width: "100%",
-          height: "100%",
+          height: "50px",
           border: "1px solid #ccc",
           outline: "none",
-          paddingLeft: "50px",
+          paddingLeft: "55px",
+          color: "#000000",
         }}
         containerStyle={{
           display: "flex",
           alignItems: "center",
-          height: "100%",
         }}
         dropdownStyle={{
           width: "auto",
           border: "1px solid #ccc",
           zIndex: 10,
+          margin: "5px",
+        }}
+        buttonStyle={{
+          width: "40px",
+          height: "40px",
+          margin: "5px",
+          borderRadius: "2px",
+          backgroundColor: "#C8C8C8",
         }}
       />
     </div>
