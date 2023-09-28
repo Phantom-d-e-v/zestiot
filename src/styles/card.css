@@ -1,0 +1,11 @@
+.card:hover path {
+  fill: #ffffff;
+}
+
+.card:hover h2 {
+  color: #fff;
+}
+
+.card:hover p {
+  color: #fff;
+}
