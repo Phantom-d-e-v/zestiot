@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Router from "next/router";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import { Icon } from "@iconify/react";
 
 export default function Layout({ children }, props) {
   const [subMenu, setSubMenu] = useState("");
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -15,12 +16,26 @@ export default function Layout({ children }, props) {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  //disable scroll when mobile menu is open
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [mobileMenuOpen]);
+
   return (
     <>
       <Head>
         <title>ZESTIOT</title>
         <meta property="og:title" content={`${props.title}`} key="title" />
       </Head>
+
+      {mobileMenuOpen && (
+        <div className="fixed  top-32 bg-white h-screen w-full overflow-hidden z-[99999]"></div>
+      )}
 
       {subMenu === "what" && (
         <div
@@ -41,11 +56,11 @@ export default function Layout({ children }, props) {
         ></div>
       )}
 
-      <nav className=" h-32 w-full hidden md:flex justify-between items-center bg-white px-32 py-2 shadow-md fixed top-0 z-[999]  ">
-        <Link className=" relative w-32 h-full" href="/">
+      <nav className=" h-32 w-full flex md:justify-around  justify-between items-center bg-white px-2  py-3 shadow-md fixed top-0 z-[999] ">
+        <Link className=" relative md:w-32 w-24 h-full" href="/">
           <div>
             <Image
-              className=" object-center"
+              className=" md:object-center  object-left"
               src="/zestiot.svg"
               alt="logo"
               fill
@@ -54,6 +69,31 @@ export default function Layout({ children }, props) {
         </Link>
 
         <div className="flex gap-1 ">
+          <div
+            onClick={
+              mobileMenuOpen
+                ? () => setMobileMenuOpen(false)
+                : () => setMobileMenuOpen(true)
+            }
+            className=" md:hidden block"
+          >
+            {mobileMenuOpen ? (
+              <Image
+                height={40}
+                width={40}
+                alt="burger menu"
+                src="/burgerOpen.svg"
+              ></Image>
+            ) : (
+              <Image
+                height={40}
+                width={40}
+                alt="burger menu"
+                src="/burgerClose.svg"
+              ></Image>
+            )}
+          </div>
+
           <div
             onClick={
               subMenu === "what"
@@ -110,38 +150,6 @@ export default function Layout({ children }, props) {
             </button>
           </Link>
         </div>
-      </nav>
-
-      <nav className="md:hidden flex w-full bg-white px-6 py-2 shadow-md fixed top-0 z-[999]">
-        <div className="flex justify-between items-center">
-          <Link href="/">
-            <div>
-              <Image src="/zestiot.svg" alt="logo" fill />
-            </div>
-          </Link>
-
-          {/* Hamburger Menu Icon */}
-          <div
-            className="cursor-pointer text-[#6F7073] font-medium"
-            onClick={toggleMobileMenu}
-          >
-            <Icon icon="iconamoon:menu" />
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="mt-4">
-            {/* Add your mobile menu items here */}
-            <Link href="/">
-              <div className="text-[#6F7073] font-medium py-2">Home</div>
-            </Link>
-            <Link href="/about">
-              <div className="text-[#6F7073] font-medium py-2">About</div>
-            </Link>
-            {/* Add more mobile menu items as needed */}
-          </div>
-        )}
       </nav>
 
       {children}
