@@ -17,9 +17,8 @@ export default function Layout({ children }, props) {
         <Link className=" relative w-32 h-full" href="/">
           <div>
             <Image
-              className=""
+              className=" object-center"
               src="/zestiot.svg"
-              objectPosition="center"
               alt="logo"
               fill
             />

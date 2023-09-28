@@ -69,24 +69,23 @@ export default function Home() {
       </Animation>
 
       <>
-        <section className=" mt-10  m-auto px-0 justify-center md:px-48 flex flex-wrap ">
+        <section className=" mt-10 w-full  px-2 m-auto  max-w-7xl justify-center  grid gap-2 grid-cols-2 lg:grid-cols-4 ">
           <Animation delay="0.2s">
-            <div class="w-[368px] rounded-[20px] m-0 my-5 md:m-10 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-6 overflow-hidden h-[502px] hover:shadow-lg hover:shadow-[#0021ff80]">
-              <div className=" w-28 h-20 mt-16 ">
-                <svg
-                  viewBox="0 0 110 82"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.5102 63.8702C11.5071 63.8724 11.5039 63.8737 11.5005 63.8762C10.2898 64.6173 9.6235 66.519 9.9705 68.2468C10.3184 69.9804 11.5676 70.9556 12.8381 70.4855L48.6569 57.2312L40.8996 71.6286C40.3361 72.6745 40.3105 74.0813 40.8371 75.0685C41.3637 76.0552 42.3133 76.3805 43.1593 75.8625L50.3429 71.4667C50.5492 71.3406 50.7416 71.1684 50.9125 70.9565L73.5228 42.9844L99.7933 26.8371C109.763 20.4916 109.172 14.8798 108.754 13.3114C108.43 12.0953 107.611 10.4305 105.554 9.40583C103.467 8.36633 100.54 8.17421 96.6074 8.8188C95.2945 9.03376 94.5884 8.943 93.8408 8.84693C91.2124 8.50943 89.4009 8.6026 79.9324 14.3966L28.1455 46.0897L10.5442 30.4671C9.88042 29.8781 9.03506 29.8033 8.2777 30.2672L4.8936 32.3384C4.19701 32.7647 3.65226 33.5998 3.40912 34.6142C3.16594 35.6291 3.25011 36.716 3.6382 37.5756L14.6498 61.9715L11.5102 63.8702Z"
-                    fill="#0021FF"
-                  />
-                </svg>
-              </div>
+            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+              <svg
+                className="max-w-[100px] max-h-[72px] w-full mt-12 "
+                viewBox="0 0 110 82"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5102 63.8702C11.5071 63.8724 11.5039 63.8737 11.5005 63.8762C10.2898 64.6173 9.6235 66.519 9.9705 68.2468C10.3184 69.9804 11.5676 70.9556 12.8381 70.4855L48.6569 57.2312L40.8996 71.6286C40.3361 72.6745 40.3105 74.0813 40.8371 75.0685C41.3637 76.0552 42.3133 76.3805 43.1593 75.8625L50.3429 71.4667C50.5492 71.3406 50.7416 71.1684 50.9125 70.9565L73.5228 42.9844L99.7933 26.8371C109.763 20.4916 109.172 14.8798 108.754 13.3114C108.43 12.0953 107.611 10.4305 105.554 9.40583C103.467 8.36633 100.54 8.17421 96.6074 8.8188C95.2945 9.03376 94.5884 8.943 93.8408 8.84693C91.2124 8.50943 89.4009 8.6026 79.9324 14.3966L28.1455 46.0897L10.5442 30.4671C9.88042 29.8781 9.03506 29.8033 8.2777 30.2672L4.8936 32.3384C4.19701 32.7647 3.65226 33.5998 3.40912 34.6142C3.16594 35.6291 3.25011 36.716 3.6382 37.5756L14.6498 61.9715L11.5102 63.8702Z"
+                  fill="#0021FF"
+                />
+              </svg>
 
-              <div class="px-6 py-4 mt-10">
-                <h2 className=" w-full mb-6 md:mt-5 md:mb-8 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
+              <div>
+                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
                   AVIATION
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
@@ -99,22 +98,21 @@ export default function Home() {
             </div>
           </Animation>
           <Animation delay="0.4s">
-            <div class="w-[368px] rounded-[20px] m-0 my-5 md:m-10 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-6 overflow-hidden h-[502px] shadow-lg hover:shadow-[#0021ff80]">
-              <div className=" w-28 h-20 mt-16 ">
-                <svg
-                  viewBox="0 0 101 90"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M43.2673 60.9337L53.1139 54.8915L49.4953 49.1132C51.3501 47.2617 52.9157 45.1088 54.1152 42.7194L60.8147 44.2714L63.4487 33.0964L56.752 31.5444C56.7463 28.9057 56.3164 26.3007 55.4673 23.7994L61.3206 20.2058L55.2127 10.462L49.3618 14.0532C47.4764 12.1974 45.3091 10.6511 42.9212 9.48194L44.4911 2.84734L33.2081 0.230469L31.6449 6.84516C28.9147 6.85085 26.2764 7.29774 23.8052 8.10953L20.1867 2.3379L10.3434 8.38487L13.9591 14.1536C12.1044 16.0066 10.5373 18.1576 9.33781 20.547L2.64593 18.9926L0 30.1677L6.70098 31.7249C6.70385 34.3636 7.1351 36.9686 7.98565 39.4656L2.13091 43.0582L8.23454 52.8101L14.0922 49.2166C15.9751 51.0705 18.1395 52.6173 20.5256 53.7906L18.9556 60.4262L30.2396 63.0426L31.8067 56.4208C34.5354 56.4151 37.1751 55.9668 39.6463 55.1545L43.2673 60.9337ZM18.6311 28.5986C20.0656 22.5426 25.4422 18.3116 31.7085 18.3116C32.74 18.3116 33.7796 18.4292 34.7967 18.6647C38.2966 19.4741 41.2627 21.5906 43.1567 24.6084C45.0521 27.628 45.6437 31.2022 44.8228 34.6674C43.3883 40.7219 38.0089 44.9534 31.7425 44.9534C30.7115 44.9534 29.6743 44.833 28.6543 44.5979C25.1574 43.7928 22.1912 41.6749 20.2944 38.6552C18.3994 35.6336 17.8107 32.0609 18.6311 28.5986ZM82.4325 68.3398L84.9842 66.7741L80.4093 59.4575L77.8486 61.0266C77.1244 60.3935 76.3409 59.8329 75.4922 59.3457L76.1801 56.4497L67.7177 54.483L67.039 57.3544C66.0487 57.4136 65.0866 57.57 64.1475 57.8169L62.5799 55.3185L55.1959 59.8566L56.741 62.3156C56.0987 63.0435 55.5473 63.8501 55.049 64.7017L52.1638 64.0382L50.1779 72.4135L53.0976 73.0888C53.1598 74.0522 53.3125 74.9939 53.5647 75.9289L51.0217 77.4923L55.6047 84.8031L58.1453 83.2402C58.881 83.8819 59.6674 84.4387 60.5103 84.9207L59.8254 87.8114L68.2877 89.7729L68.9636 86.9044C69.9539 86.8423 70.916 86.6916 71.8551 86.4447L73.4221 88.946L80.8066 84.4112L79.2615 81.946C79.9096 81.2181 80.461 80.4115 80.9531 79.5599L83.8388 80.2262L85.8247 71.8481L82.9021 71.1728C82.837 70.2027 82.6843 69.2611 82.4325 68.3398ZM74.1516 73.5584C73.3676 76.8639 69.9673 78.9983 66.5637 78.2135C64.9282 77.8297 63.5305 76.8411 62.645 75.4237C61.7538 74.0119 61.4819 72.3367 61.861 70.7065C62.5345 67.8636 65.0612 65.8718 67.9943 65.8718C68.4811 65.8718 68.9617 65.9338 69.4374 66.04C72.8334 66.8414 74.9437 70.2027 74.1516 73.5584ZM95.7096 40.3357L99.6756 41.2531L101 35.6692L97.045 34.7531C97.0732 33.1646 96.81 31.5908 96.2696 30.099L99.7273 27.973L96.6688 23.1004L93.2139 25.2225C92.0997 24.0866 90.792 23.154 89.3436 22.4715L90.2717 18.5571L84.6305 17.2463L83.7081 21.1522C83.6397 21.1522 83.5664 21.1413 83.4961 21.1413C81.9199 21.1413 80.4007 21.4076 78.9835 21.9019L76.864 18.5083L71.9388 21.5275L74.0826 24.959C72.9516 26.0514 72.0063 27.3328 71.3132 28.7882L67.3439 27.8693L66.0257 33.4546L69.975 34.3693C69.9467 35.9587 70.2095 37.5302 70.7499 39.0249L67.2984 41.1479L70.3569 46.0177L73.8055 43.8989C74.9231 45.0344 76.2274 45.9689 77.6758 46.6509L76.7535 50.5672L82.389 51.8785L83.3166 47.9678C83.3874 47.9678 83.4583 47.9787 83.5262 47.9787C85.0991 47.9787 86.6159 47.7124 88.036 47.2195L90.1607 50.6174L95.0802 47.5863L92.9358 44.1619C94.0688 43.0748 95.0108 41.7891 95.7096 40.3357ZM75.9565 32.8116C76.7884 29.3161 79.8833 26.8779 83.4994 26.8779C84.0963 26.8779 84.696 26.9466 85.2819 27.0812C87.3018 27.5517 89.0105 28.7673 90.1023 30.5094C91.1946 32.2505 91.5397 34.3119 91.0644 36.3118C90.1023 40.3764 85.9094 43.0094 81.74 42.0303C79.7253 41.5626 78.0113 40.3442 76.9191 38.6031C75.8263 36.862 75.487 34.8048 75.9565 32.8116Z"
-                    fill="#0021FF"
-                  />
-                </svg>
-              </div>
+            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+              <svg
+                className="max-w-[100px] max-h-[72px] w-full mt-12 "
+                viewBox="0 0 101 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M43.2673 60.9337L53.1139 54.8915L49.4953 49.1132C51.3501 47.2617 52.9157 45.1088 54.1152 42.7194L60.8147 44.2714L63.4487 33.0964L56.752 31.5444C56.7463 28.9057 56.3164 26.3007 55.4673 23.7994L61.3206 20.2058L55.2127 10.462L49.3618 14.0532C47.4764 12.1974 45.3091 10.6511 42.9212 9.48194L44.4911 2.84734L33.2081 0.230469L31.6449 6.84516C28.9147 6.85085 26.2764 7.29774 23.8052 8.10953L20.1867 2.3379L10.3434 8.38487L13.9591 14.1536C12.1044 16.0066 10.5373 18.1576 9.33781 20.547L2.64593 18.9926L0 30.1677L6.70098 31.7249C6.70385 34.3636 7.1351 36.9686 7.98565 39.4656L2.13091 43.0582L8.23454 52.8101L14.0922 49.2166C15.9751 51.0705 18.1395 52.6173 20.5256 53.7906L18.9556 60.4262L30.2396 63.0426L31.8067 56.4208C34.5354 56.4151 37.1751 55.9668 39.6463 55.1545L43.2673 60.9337ZM18.6311 28.5986C20.0656 22.5426 25.4422 18.3116 31.7085 18.3116C32.74 18.3116 33.7796 18.4292 34.7967 18.6647C38.2966 19.4741 41.2627 21.5906 43.1567 24.6084C45.0521 27.628 45.6437 31.2022 44.8228 34.6674C43.3883 40.7219 38.0089 44.9534 31.7425 44.9534C30.7115 44.9534 29.6743 44.833 28.6543 44.5979C25.1574 43.7928 22.1912 41.6749 20.2944 38.6552C18.3994 35.6336 17.8107 32.0609 18.6311 28.5986ZM82.4325 68.3398L84.9842 66.7741L80.4093 59.4575L77.8486 61.0266C77.1244 60.3935 76.3409 59.8329 75.4922 59.3457L76.1801 56.4497L67.7177 54.483L67.039 57.3544C66.0487 57.4136 65.0866 57.57 64.1475 57.8169L62.5799 55.3185L55.1959 59.8566L56.741 62.3156C56.0987 63.0435 55.5473 63.8501 55.049 64.7017L52.1638 64.0382L50.1779 72.4135L53.0976 73.0888C53.1598 74.0522 53.3125 74.9939 53.5647 75.9289L51.0217 77.4923L55.6047 84.8031L58.1453 83.2402C58.881 83.8819 59.6674 84.4387 60.5103 84.9207L59.8254 87.8114L68.2877 89.7729L68.9636 86.9044C69.9539 86.8423 70.916 86.6916 71.8551 86.4447L73.4221 88.946L80.8066 84.4112L79.2615 81.946C79.9096 81.2181 80.461 80.4115 80.9531 79.5599L83.8388 80.2262L85.8247 71.8481L82.9021 71.1728C82.837 70.2027 82.6843 69.2611 82.4325 68.3398ZM74.1516 73.5584C73.3676 76.8639 69.9673 78.9983 66.5637 78.2135C64.9282 77.8297 63.5305 76.8411 62.645 75.4237C61.7538 74.0119 61.4819 72.3367 61.861 70.7065C62.5345 67.8636 65.0612 65.8718 67.9943 65.8718C68.4811 65.8718 68.9617 65.9338 69.4374 66.04C72.8334 66.8414 74.9437 70.2027 74.1516 73.5584ZM95.7096 40.3357L99.6756 41.2531L101 35.6692L97.045 34.7531C97.0732 33.1646 96.81 31.5908 96.2696 30.099L99.7273 27.973L96.6688 23.1004L93.2139 25.2225C92.0997 24.0866 90.792 23.154 89.3436 22.4715L90.2717 18.5571L84.6305 17.2463L83.7081 21.1522C83.6397 21.1522 83.5664 21.1413 83.4961 21.1413C81.9199 21.1413 80.4007 21.4076 78.9835 21.9019L76.864 18.5083L71.9388 21.5275L74.0826 24.959C72.9516 26.0514 72.0063 27.3328 71.3132 28.7882L67.3439 27.8693L66.0257 33.4546L69.975 34.3693C69.9467 35.9587 70.2095 37.5302 70.7499 39.0249L67.2984 41.1479L70.3569 46.0177L73.8055 43.8989C74.9231 45.0344 76.2274 45.9689 77.6758 46.6509L76.7535 50.5672L82.389 51.8785L83.3166 47.9678C83.3874 47.9678 83.4583 47.9787 83.5262 47.9787C85.0991 47.9787 86.6159 47.7124 88.036 47.2195L90.1607 50.6174L95.0802 47.5863L92.9358 44.1619C94.0688 43.0748 95.0108 41.7891 95.7096 40.3357ZM75.9565 32.8116C76.7884 29.3161 79.8833 26.8779 83.4994 26.8779C84.0963 26.8779 84.696 26.9466 85.2819 27.0812C87.3018 27.5517 89.0105 28.7673 90.1023 30.5094C91.1946 32.2505 91.5397 34.3119 91.0644 36.3118C90.1023 40.3764 85.9094 43.0094 81.74 42.0303C79.7253 41.5626 78.0113 40.3442 76.9191 38.6031C75.8263 36.862 75.487 34.8048 75.9565 32.8116Z"
+                  fill="#0021FF"
+                />
+              </svg>
 
-              <div class="px-6 py-4 mt-10">
-                <h2 className=" w-full mb-6 md:mt-5 md:mb-8 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
+              <div>
+                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
                   MANUFACTURING
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
@@ -127,28 +125,27 @@ export default function Home() {
             </div>
           </Animation>
           <Animation delay="0.6s">
-            <div class="w-[368px] rounded-[20px] m-0 my-5 md:m-10 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-6 overflow-hidden h-[502px] shadow-lg hover:shadow-[#0021ff80]">
-              <div className=" w-28 h-20 mt-16 ">
-                <svg
-                  viewBox="0 0 102 100"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_604_95)">
-                    <path
-                      d="M80.4001 58.1883C79.2125 58.6675 78.4376 59.8133 78.4376 61.08C78.4376 61.1258 78.4039 63.2675 77.7806 65.8592C77.4858 60.7592 76.0834 55.0383 72.0066 50.9342C71.2023 50.1258 70.0146 49.805 68.9196 50.1092C67.812 50.4092 66.9613 51.2758 66.6876 52.3758C64.8429 59.8133 62.1181 63.93 59.7092 67.5675C57.157 71.4258 54.748 75.0633 54.748 80.9675C54.748 91.4633 63.251 100.001 73.6997 100.001C84.1483 100.001 92.6513 91.4633 92.6513 80.9675C92.6513 71.8925 88.0903 63.1633 83.8493 58.8925C82.948 57.9883 81.5835 57.7133 80.4001 58.1883Z"
-                      fill="#0021FF"
-                    />
-                    <path
-                      d="M52.6609 63.0083C54.8929 59.6333 57.0029 56.4458 58.5022 50.3958C59.5045 46.3583 62.6463 43.1708 66.6935 42.075C67.6537 41.8083 68.7023 41.6667 69.7552 41.6667C70.3743 41.6667 70.9892 41.7542 71.5956 41.85V14.5833H72.6485C74.392 14.5833 75.8071 13.1833 75.8071 11.4583C75.8071 9.73333 74.392 8.33333 72.6485 8.33333H68.437H37.9039V7.29167C37.9039 3.27083 34.5979 0 30.5338 0H28.4281C24.364 0 21.058 3.27083 21.058 7.29167V8.33333H15.7937H11.5822C9.83864 8.33333 8.42358 9.73333 8.42358 11.4583C8.42358 13.1833 9.83864 14.5833 11.5822 14.5833H12.6351V44.7917H11.5822C9.83864 44.7917 8.42358 46.1917 8.42358 47.9167C8.42358 49.6417 9.83864 51.0417 11.5822 51.0417H12.6351V81.25H11.5822C9.83864 81.25 8.42358 82.65 8.42358 84.375C8.42358 86.1 9.83864 87.5 11.5822 87.5H15.7937H47.148C46.63 85.4 46.3268 83.2208 46.3268 80.9667C46.3268 72.575 49.8392 67.2708 52.6609 63.0083ZM31.5867 8.33333H27.3752V7.29167C27.3752 6.71667 27.8469 6.25 28.4281 6.25H30.5338C31.115 6.25 31.5867 6.71667 31.5867 7.29167V8.33333Z"
-                      fill="#0021FF"
-                    />
-                  </g>
-                </svg>
-              </div>
+            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+              <svg
+                className="max-w-[100px] max-h-[72px] w-full mt-12 "
+                viewBox="0 0 102 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_604_95)">
+                  <path
+                    d="M80.4001 58.1883C79.2125 58.6675 78.4376 59.8133 78.4376 61.08C78.4376 61.1258 78.4039 63.2675 77.7806 65.8592C77.4858 60.7592 76.0834 55.0383 72.0066 50.9342C71.2023 50.1258 70.0146 49.805 68.9196 50.1092C67.812 50.4092 66.9613 51.2758 66.6876 52.3758C64.8429 59.8133 62.1181 63.93 59.7092 67.5675C57.157 71.4258 54.748 75.0633 54.748 80.9675C54.748 91.4633 63.251 100.001 73.6997 100.001C84.1483 100.001 92.6513 91.4633 92.6513 80.9675C92.6513 71.8925 88.0903 63.1633 83.8493 58.8925C82.948 57.9883 81.5835 57.7133 80.4001 58.1883Z"
+                    fill="#0021FF"
+                  />
+                  <path
+                    d="M52.6609 63.0083C54.8929 59.6333 57.0029 56.4458 58.5022 50.3958C59.5045 46.3583 62.6463 43.1708 66.6935 42.075C67.6537 41.8083 68.7023 41.6667 69.7552 41.6667C70.3743 41.6667 70.9892 41.7542 71.5956 41.85V14.5833H72.6485C74.392 14.5833 75.8071 13.1833 75.8071 11.4583C75.8071 9.73333 74.392 8.33333 72.6485 8.33333H68.437H37.9039V7.29167C37.9039 3.27083 34.5979 0 30.5338 0H28.4281C24.364 0 21.058 3.27083 21.058 7.29167V8.33333H15.7937H11.5822C9.83864 8.33333 8.42358 9.73333 8.42358 11.4583C8.42358 13.1833 9.83864 14.5833 11.5822 14.5833H12.6351V44.7917H11.5822C9.83864 44.7917 8.42358 46.1917 8.42358 47.9167C8.42358 49.6417 9.83864 51.0417 11.5822 51.0417H12.6351V81.25H11.5822C9.83864 81.25 8.42358 82.65 8.42358 84.375C8.42358 86.1 9.83864 87.5 11.5822 87.5H15.7937H47.148C46.63 85.4 46.3268 83.2208 46.3268 80.9667C46.3268 72.575 49.8392 67.2708 52.6609 63.0083ZM31.5867 8.33333H27.3752V7.29167C27.3752 6.71667 27.8469 6.25 28.4281 6.25H30.5338C31.115 6.25 31.5867 6.71667 31.5867 7.29167V8.33333Z"
+                    fill="#0021FF"
+                  />
+                </g>
+              </svg>
 
-              <div class="px-6 py-4 mt-10">
-                <h2 className=" w-full mb-6 md:mt-5 md:mb-8 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
+              <div>
+                <h2 className=" w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
                   OIL & GAS
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
@@ -160,39 +157,38 @@ export default function Home() {
               </div>
             </div>
           </Animation>
-          <Animation delay={"0.8s"}>
-            <div class="w-[368px] rounded-[20px] m-0 my-5 md:m-10 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-6 overflow-hidden h-[502px] shadow-lg hover:shadow-[#0021ff80]">
-              <div className=" w-28 h-20 mt-16 ">
-                <svg
-                  viewBox="0 0 90 90"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M52.3594 15.7804H40.8875L43.7142 10.0645L60.9326 5.09047L59.4941 0L40.0609 5.61406L35.0337 15.7804H0V29.0156H52.3594V15.7804Z"
-                    fill="#0021FF"
-                  />
-                  <path
-                    d="M36.6523 71.3672H83.7758V76.6613H36.6523V71.3672Z"
-                    fill="#0021FF"
-                  />
-                  <path
-                    d="M26.1798 66.0733C26.1798 53.0136 34.7275 41.9348 46.4631 38.255L46.7483 34.3086H5.70117L10.6992 89.8968H27.5886C26.6945 88.3382 26.1798 86.5307 26.1798 84.6027V66.0733Z"
-                    fill="#0021FF"
-                  />
-                  <path
-                    d="M31.416 66.0735H89.0114C89.0114 52.9372 78.4417 42.25 65.4496 42.25H54.9778C41.9858 42.25 31.416 52.9372 31.416 66.0735Z"
-                    fill="#0021FF"
-                  />
-                  <path
-                    d="M31.416 84.6039C31.416 87.5233 33.7649 89.898 36.652 89.898H83.77C86.6571 89.898 89.006 87.5233 89.006 84.6039V81.9568H31.416V84.6039Z"
-                    fill="#0021FF"
-                  />
-                </svg>
-              </div>
+          <Animation delay="0.8s">
+            <div className="w-full rounded-[20px] m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-3 overflow-hidden h-full shadow-lg hover:shadow-[#0021ff80]">
+              <svg
+                className="max-w-[100px] max-h-[72px] w-full mt-12 "
+                viewBox="0 0 90 90"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M52.3594 15.7804H40.8875L43.7142 10.0645L60.9326 5.09047L59.4941 0L40.0609 5.61406L35.0337 15.7804H0V29.0156H52.3594V15.7804Z"
+                  fill="#0021FF"
+                />
+                <path
+                  d="M36.6523 71.3672H83.7758V76.6613H36.6523V71.3672Z"
+                  fill="#0021FF"
+                />
+                <path
+                  d="M26.1798 66.0733C26.1798 53.0136 34.7275 41.9348 46.4631 38.255L46.7483 34.3086H5.70117L10.6992 89.8968H27.5886C26.6945 88.3382 26.1798 86.5307 26.1798 84.6027V66.0733Z"
+                  fill="#0021FF"
+                />
+                <path
+                  d="M31.416 66.0735H89.0114C89.0114 52.9372 78.4417 42.25 65.4496 42.25H54.9778C41.9858 42.25 31.416 52.9372 31.416 66.0735Z"
+                  fill="#0021FF"
+                />
+                <path
+                  d="M31.416 84.6039C31.416 87.5233 33.7649 89.898 36.652 89.898H83.77C86.6571 89.898 89.006 87.5233 89.006 84.6039V81.9568H31.416V84.6039Z"
+                  fill="#0021FF"
+                />
+              </svg>
 
-              <div class=" pl-6 py-4 mt-10">
-                <h2 className=" w-full mb-6 md:mt-5 md:mb-8 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl  ">
+              <div>
+                <h2 className="w-full mb-2 md:mt-5 md:mb-3 font-extrabold text-left text-secondary-300 text-2xl md:text-3xl">
                   FOOD & BEVERAGES
                 </h2>
                 <p className=" pr-6 text-secondary-300 text-left text-sm md:text-base">
@@ -326,29 +322,27 @@ export default function Home() {
         </section>
       </Animation>
 
-      {/* <section className="w-full">
-        <div className=" w-full bg-primary-100 h-44 overflow-hidden">
-          <div className="pt-14 text-white text-3xl md:text-4xl lg:text-5xl font-light animate-marquee whitespace-nowrap">
-            <span>RUNNING LIVE : </span>
-            <span className="font-bold">800</span>
-            <span> FLIGHTS |</span>
-            <span className="font-bold"> 9000</span>
-            <span> MANPOWER |</span>
-            <span className="font-bold"> 800</span>
-            <span> EQUIPMENTS</span>
-          </div>
-
-          <div className=" absolute top-0 pt-14 text-white text-3xl md:text-4xl lg:text-5xl font-light animate-marquee2 whitespace-nowrap">
-            <span>RUNNING LIVE : </span>
-            <span className="font-bold">800</span>
-            <span> FLIGHTS |</span>
-            <span className="font-bold"> 9000</span>
-            <span> MANPOWER |</span>
-            <span className="font-bold"> 800</span>
-            <span> EQUIPMENTS</span>
-          </div>
+      <div className=" relative flex overflow-x-hidden bg-primary-100  overflow-hidden">
+        <div className=" py-12 animate-marquee whitespace-nowrap text-white text-3xl md:text-4xl lg:text-5xl font-light ">
+          <span> RUNNING LIVE : </span>
+          <span className="font-bold">800</span>
+          <span> FLIGHTS | </span>
+          <span className="font-bold"> 9000</span>
+          <span> MANPOWER | </span>
+          <span className="font-bold"> 800</span>
+          <span> EQUIPMENTS </span>
         </div>
-      </section> */}
+
+        <div className=" absolute top-0 py-12 animate-marquee2 whitespace-nowrap   text-white text-3xl md:text-4xl lg:text-5xl font-light ">
+          <span> RUNNING LIVE : </span>
+          <span className="font-bold">800</span>
+          <span> FLIGHTS | </span>
+          <span className="font-bold"> 9000</span>
+          <span> MANPOWER | </span>
+          <span className="font-bold"> 800</span>
+          <span> EQUIPMENTS </span>
+        </div>
+      </div>
 
       <Animation delay="0.2s">
         <section className=" mt-40 mb-40">
@@ -372,120 +366,166 @@ export default function Home() {
       </Animation>
 
       <Animation delay="0.2s">
-        <section className=" flex flex-wrap w-full h-[452px] justify-center bg-secondary-300">
-          <div className=" flex flex-wrap max-w-[1480px] h-[452px] py-12 justify-center ">
-            <img
-              className=" object-contain  px-3"
+        <section className=" flex flex-wrap w-full min-h-[452px] justify-center bg-secondary-300">
+          <div className=" flex flex-wrap max-w-[1480px] h-fit py-12 justify-center ">
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Air india sats logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Bengaluru_Airport_Logo_ 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/BrusselsAirport 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/celebi logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Delhi airport 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Dubai_airports_logo_ 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/IndiGo_Airlines_logo_ 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/SpiceJet-Logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Bharat-Petroleum-logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Diageo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/hindustan zinc logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Hindustan_Petroleum_Logo_ 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/HOSPET 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/-Jindal_Steel_and_Power_Logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Rajiv_Gandhi_International_Airport_Logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Gatwick_Airport_logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/SAIL_Logo_ 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Saint-Gobain_logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Vedanta-Logo- 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/Jio-bp_logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/JSW_Group_logo_ 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/AirAsia_New_Logo 1.png"
               alt="hero"
             />
-            <img
-              className=" object-contain  px-3"
+            <Image
+              className="  object-contain  px-3"
+              width={160}
+              height={70}
               src="/customerLogos/P&G_logo 1.png"
               alt="hero"
             />
@@ -510,10 +550,10 @@ export default function Home() {
             </Animation>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[350px] mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-20">
             <div className="hidden md:block"></div>
             <Animation delay="0.2s">
-              <div className="flex rounded-[20px] w-[476px] h-[515px] bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -554,7 +594,7 @@ export default function Home() {
               </div>
             </Animation>
             <Animation delay="0.4s">
-              <div className="flex rounded-[20px] w-[476px] h-[515px] bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -596,9 +636,9 @@ export default function Home() {
             </Animation>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[350px] mb-20    ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-20    ">
             <Animation delay="0.2s">
-              <div className="flex rounded-[20px] w-[476px] h-[515px] bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -654,7 +694,7 @@ export default function Home() {
               </div>
             </Animation>
             <Animation delay="0.4s">
-              <div className="flex rounded-[20px] w-[476px] h-[515px] bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
