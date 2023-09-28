@@ -218,13 +218,16 @@ export default function Layout({ children }, props) {
               <span className=" mb-3 text-lg md:text-xl underline font-medium ">
                 Address
               </span>
-              <div className="mt-2 flex items-center gap-1">
+              <div className="mt-2 flex items-center gap-1 max-w-lg">
                 <Icon icon="carbon:location-filled" width="15" height="15" />{" "}
-                Address for India
+                2nd Floor, Plot 28, Rd Number 76, opposite Maha
+                <br /> News Office, Jubilee Hills, Hyderabad,
+                <br /> Telangana 500033
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 max-w-lg pt-5">
                 <Icon icon="carbon:location-filled" width="15" height="15" />{" "}
-                Address for Netherland
+                ZESTIOT TECHNOLOGIES B.V. , Steenovenweg 5,
+                <br /> 5708HN Helmond, NL
               </div>
             </div>
           </section>

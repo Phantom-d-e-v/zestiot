@@ -68,9 +68,9 @@ export default function Home() {
       </Animation>
 
       <>
-        <section className=" mt-10 max-w-[1500px] px-2 m-auto   justify-center  grid gap-2 md:gap-40 max-md:px-24 md:grid-cols-2 lg:grid-cols-4 ">
+        <section className=" mt-10 max-w-[1500px] px-2 m-auto   justify-center  grid gap-2 md:gap-5 lg:gap-10 max-md:px-24 md2:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 ">
           <Animation delay="0.2s">
-            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
+            <div className=" w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 110 82"
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
           </Animation>
           <Animation delay="0.4s">
-            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
+            <div className="  w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 101 90"
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
           </Animation>
           <Animation delay="0.6s">
-            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
+            <div className="  w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 102 100"
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
           </Animation>
           <Animation delay="0.8s">
-            <div className=" min-w-[318px] w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
+            <div className="  w-full rounded-[20px] pt-5 m-0 my-5 card flex bg-[#FAFAFA] hover:bg-[#0000F2] flex-col items-center px-7 overflow-hidden h-full hover:shadow-lg hover:shadow-[#0021ff80]">
               <svg
                 className="max-w-[100px] max-h-[72px] w-full mt-12 "
                 viewBox="0 0 90 90"
@@ -205,7 +205,7 @@ export default function Home() {
         </section>
       </>
 
-      <section className="w-full py-14 mt-30 ">
+      <section className="w-full py-14 mt-10 md:mt-32 ">
         <div className="grid grid-cols-3 w-full max-w-7xl m-auto justify-around items-center">
           <div
             className={`flex flex-col relative gap-2 text-secondary-300 justify-center items-center `}
@@ -240,8 +240,11 @@ export default function Home() {
               </span>
             </span>
 
-            <span className=" md:text-lg text-base lg:text-xl">
+            <span className="hidden md:block md:text-lg text-base lg:text-xl">
               Return on Investment
+            </span>
+            <span className="block md:hidden md:text-lg text-base lg:text-xl">
+              ROI
             </span>
           </div>
 
@@ -312,8 +315,8 @@ export default function Home() {
               />
             </svg>
 
-            <h2 className="ml-2 text-2xl font-semibold text-primary-100">
-              Industries We Serve
+            <h2 className="ml-2 text-lg md:text-2xl font-semibold text-primary-100">
+              Real time smart decisions
             </h2>
           </div>
         </div>
@@ -331,7 +334,7 @@ export default function Home() {
               />
             </svg>
 
-            <h2 className="ml-2 text-2xl font-semibold text-primary-100">
+            <h2 className="ml-2 text-lg md:text-2xl font-semibold text-primary-100">
               Definitive ROI
             </h2>
           </div>
@@ -350,7 +353,7 @@ export default function Home() {
               />
             </svg>
 
-            <h2 className="ml-2 text-2xl font-semibold text-primary-100">
+            <h2 className="ml-2 text-lg md:text-2xl font-semibold text-primary-100">
               High degree of operational Efficiency
             </h2>
           </div>
@@ -358,7 +361,7 @@ export default function Home() {
       </Animation>
 
       <Animation delay="0.2s">
-        <section className=" mt-40  text-secondary-300 w-full  m-auto flex flex-col  gap-10 p-2 px-5 items-center ">
+        <section className=" mt-10 md:mt-40  text-secondary-300 w-full  m-auto flex flex-col  gap-10 p-2 px-5 items-center ">
           <div className=" text-secondary-300 max-w-[1480px] font-normal leading-normal lg:text-[32px] md:text-3xl text-left text-lg">
             ZestIoT is an IoT/AI powered connected operations platform
             empowering businesses with proactive decision making and
@@ -375,13 +378,21 @@ export default function Home() {
       </Animation>
 
       <Animation delay="0.2s">
-        <section className=" pt-52">
+        <section className="">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="w-full" src="/successMetric.png" alt="sm" />
+          <video
+            loop
+            autoPlay
+            muted
+            className=" w-full object-cover h-fit"
+            alt="hero"
+            src="/Waves V01-1.m4v"
+            type="video/mp4"
+          ></video>
         </section>
       </Animation>
 
-      <div className=" relative flex overflow-x-hidden bg-primary-100  overflow-hidden">
+      <div className=" relative -mt-10 md:-mt-56 flex overflow-x-hidden bg-primary-100  overflow-hidden">
         <div className=" py-12 animate-marquee whitespace-nowrap text-white text-3xl md:text-4xl lg:text-5xl font-light ">
           <span className=" w-1"> </span>
           <span> RUNNING LIVE : </span>
@@ -434,7 +445,7 @@ export default function Home() {
       </div>
 
       <Animation delay="0.2s">
-        <section className=" mt-40 mb-40">
+        <section className=" mt-10 md:mt-40 mb-40">
           <div className=" px-3 max-w-[1480px] m-auto">
             <h2 className=" w-full text-center text-5xl md:text-7xl font-semibold pb-5 text-primary-100">
               Customer Stories
@@ -639,10 +650,10 @@ export default function Home() {
             </Animation>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 md:mb-20 mb-4 gap-4 ">
             <div className="hidden md:block"></div>
             <Animation delay="0.2s">
-              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 hover:shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     viewBox="0 0 90 61"
@@ -683,7 +694,7 @@ export default function Home() {
               </div>
             </Animation>
             <Animation delay="0.4s">
-              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 hover:shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -725,9 +736,9 @@ export default function Home() {
             </Animation>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-20    ">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 md:mb-20 mb-4 gap-4 ">
             <Animation delay="0.2s">
-              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 hover:shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -782,7 +793,7 @@ export default function Home() {
               </div>
             </Animation>
             <Animation delay="0.4s">
-              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 shadow-lg hover:shadow-[#0021ff80]">
+              <div className="flex rounded-[20px] w-full h-full bg-[#FAFAFA] hover:bg-[#0000F2] items-left p-9 card flex-col gap-3 hover:shadow-lg hover:shadow-[#0021ff80]">
                 <div className=" w-16 h-16">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -828,7 +839,7 @@ export default function Home() {
       </section>
 
       <Animation delay="0.2s">
-        <section className=" mt-32">
+        <section className=" ">
           <div className=" px-3 max-w-7xl m-auto">
             <h2 className="w-full text-center text-5xl md:text-7xl font-semibold pb-5 text-primary-100">
               Awards & Recognition.
@@ -843,167 +854,48 @@ export default function Home() {
       </Animation>
 
       <Animation delay="0.2s">
-        <section className=" flex flex-wrap w-full min-h-[452px] justify-center bg-primary-100">
+        <section className=" flex flex-wrap w-full min-h-[425px] justify-center bg-primary-100">
           <div className=" flex flex-wrap max-w-[1480px] h-fit py-12 justify-center ">
             <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Air india sats logo 1.png"
+              className="  object-contain  px-7"
+              width={174}
+              height={174}
+              src="/awardLogos/CISCO-launchpad 1.png"
               alt="hero"
             />
             <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Bengaluru_Airport_Logo_ 1.png"
+              className="  object-contain  px-7"
+              width={203}
+              height={203}
+              src="/awardLogos/DTC (Red + Maroon) 1.png"
               alt="hero"
             />
             <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/BrusselsAirport 1.png"
+              className="  object-contain  px-7"
+              width={136}
+              height={136}
+              src="/awardLogos/Marico_Logo 1.png"
               alt="hero"
             />
             <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/celebi logo 1.png"
+              className="  object-contain  px-7"
+              width={264}
+              height={264}
+              src="/awardLogos/Plug_and_Play_Logo_HR 1.png"
               alt="hero"
             />
             <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Delhi airport 1.png"
+              className="  object-contain  px-7"
+              width={121}
+              height={84}
+              src="/awardLogos/TechRocketship 1.png"
               alt="hero"
             />
             <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Dubai_airports_logo_ 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/IndiGo_Airlines_logo_ 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/SpiceJet-Logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Bharat-Petroleum-logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Diageo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/hindustan zinc logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Hindustan_Petroleum_Logo_ 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/HOSPET 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/-Jindal_Steel_and_Power_Logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Rajiv_Gandhi_International_Airport_Logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Gatwick_Airport_logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/SAIL_Logo_ 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Saint-Gobain_logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Vedanta-Logo- 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/Jio-bp_logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/JSW_Group_logo_ 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/AirAsia_New_Logo 1.png"
-              alt="hero"
-            />
-            <Image
-              className="  object-contain  px-3"
-              width={160}
-              height={70}
-              src="/customerLogos/P&G_logo 1.png"
+              className="  object-contain  px-7"
+              width={252}
+              height={252}
+              src="/awardLogos/T-Hub_Logo-PNG 1.png"
               alt="hero"
             />
           </div>
@@ -1013,16 +905,16 @@ export default function Home() {
       <Animation delay="0.2s">
         <section className=" flex p-3 py-16 items-center max-w-6xl gap-3 flex-col md:flex-row m-auto">
           <div className=" w-full  md:w-1/2">
-            <h2 className=" text-5xl md:text-7xl font-extrabold pb-5 text-primary-100">
-              Get In Touch.
+            <h2 className=" text-5xl md:text-7xl font-semibold lead pb-5 text-primary-100">
+              Get In Touch
             </h2>
-            <p className="   font-medium lg:text-2xl leading-normal md:text-2xl text-xl mt-10 mb-28 ">
+            <p className=" font-normal lg:text-2xl leading-normal md:text-2xl text-xl mt-10 mb-28 ">
               Partner with us and join the ranks of satisfied customers who have
               experienced the transformative power of our IOT solutions. Contact
               us today to learn more and fill out our get in touch form.
             </p>
           </div>
-          <div className=" w-full md:w-1/2">
+          <div className=" w-full p-3 py-0 md:py-16 md:w-1/2">
             <form
               className="flex flex-col gap-3"
               action="mailto:someone@example.com"
@@ -1057,7 +949,7 @@ export default function Home() {
               <input
                 className=" w-full h-[50px] bg-primary-100 hover:bg-primary-300 cursor-pointer text-white font-bold"
                 type="submit"
-                value="Send"
+                value="BOOK A MEETING"
               />
             </form>
           </div>
