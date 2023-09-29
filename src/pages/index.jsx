@@ -316,7 +316,7 @@ export default function Home() {
             </svg>
 
             <h2 className="ml-2 text-lg md:text-2xl font-semibold text-primary-100">
-              Real time smart decisions
+              Real Time Smart Decisions
             </h2>
           </div>
         </div>
@@ -354,7 +354,7 @@ export default function Home() {
             </svg>
 
             <h2 className="ml-2 text-lg md:text-2xl font-semibold text-primary-100">
-              High degree of operational Efficiency
+              High Degree Of Operational Efficiency
             </h2>
           </div>
         </div>
@@ -644,14 +644,14 @@ export default function Home() {
       <section className=" pt-14 w-full pb-28 ">
         <div className=" px-3 max-w-7xl m-auto">
           <Animation delay="0.2s">
-            <h2 className=" text-6xl md:text-8xl pt-32 font-semibold pb-2 text-primary-100">
+            <h2 className=" text-6xl md:text-8xl pt-10 md:pt-32 leading-normal font-semibold pb-2 text-primary-100">
               Why ZestIOT
             </h2>
           </Animation>
 
           <div className="max-w-[1480px]">
             <Animation delay="0.2s">
-              <p className="text-secondary-300 font-normal mb-20 pt-14 text-left leading-normal md:text-[32px] text-2xl">
+              <p className="text-secondary-300 font-normal mb-20 pt-7 md:pt-14 text-left leading-normal md:text-[32px] text-2xl">
                 Our Commitment to Innovation, Reliability, and Customer-focused
                 solutions is our
                 <br /> key differentiator.

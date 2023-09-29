@@ -220,9 +220,9 @@ export default function Layout({ children }, props) {
               </span>
               <div className="mt-2 flex items-center gap-1 max-w-lg">
                 <Icon icon="carbon:location-filled" width="15" height="15" />{" "}
-                2nd Floor, Plot 28, Rd Number 76, opposite Maha
-                <br /> News Office, Jubilee Hills, Hyderabad,
-                <br /> Telangana 500033
+                2nd Floor, Plot 28, Rd Number 76,
+                <br /> opposite Maha News Office, Jubilee Hills, Hyderabad,
+                Telangana 500033
               </div>
               <div className="flex items-center gap-1 max-w-lg pt-5">
                 <Icon icon="carbon:location-filled" width="15" height="15" />{" "}
