@@ -11,34 +11,19 @@ export default function Home() {
         <div className="  h-fit w-full ">
           <h1
             style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className=" md:block hidden  mb-5  mt-10 pl-5 md:pl-60 px-3 text-4xl md:text-5xl leading-tight md:leading-normal lg:text-7xl text-[#fff]  font-semibold lg:max-w-6xl text-left"
+            className="  mb-5  mt-10 pl-5 md:pl-60 px-3 text-4xl md:text-5xl leading-tight md:leading-normal lg:text-7xl text-[#fff]  font-semibold lg:max-w-6xl text-left"
           >
             Transforming
-            <br className="block md:hidden" /> Airport &<br /> Airlines
-            <br className="block md:hidden" />
-            Operations
+            <br className="block md:hidden" /> Airport &<br /> Airlines{" "}
+            <br className="block md:hidden" /> Operations
             <br className="block md:hidden" /> Plan
-          </h1>
-          <h1
-            style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className=" block md:hidden  mb-5  mt-10 px-3 text-4xl pl-5 md:text-5xl  lg:text-7xl text-[#fff]  font-semibold lg:max-w-6xl  text-left"
-          >
-            Transforming
-            <br />
-            Airport &<br />
-            Airlines
-            <br />
-            Operations
-            <br />
-            Plan
           </h1>
           <p
             style={{ textShadow: "2px 4px 4px rgba(0, 0, 0, 0.25)" }}
             className=" mb-24 px-3  z-10 text-base md:pl-60 pl-5 md:text-lg font-normal leading-normal lg:text-2xl  text-[#fff]  max-w-4xl text-left"
           >
-            Enabling real time prediction driven decision making and
-            <br className="block md:hidden" />
-            100% Operations Coverage.
+            Enabling real time prediction driven decision making and 100%
+            Operations Coverage.
           </p>
         </div>
 
@@ -107,12 +92,9 @@ export default function Home() {
                 </h2>
                 <p className=" text-secondary-300 text-left text-sm md:text-base">
                   Ground Radar uses IoT and CameraAI to digitise & automate 100+
-                  ground operations.
-                  <br />
-                  It enhances predictability, accelerates decision-making, and
-                  optimises turn time sequences, effectively identifying and
-                  <br />
-                  resolving issues.
+                  ground operations. It enhances predictability, accelerates
+                  decision-making, and optimises turn time sequences,
+                  effectively identifying and resolving issues.
                 </p>
               </div>
             </div>
@@ -379,9 +361,9 @@ export default function Home() {
       </Animation>
 
       <Animation delay="0.2s">
-        <section className=" mt-10 md:mt-40  text-secondary-300 w-full  m-auto flex flex-col  gap-10 p-2 px-5 items-center ">
+        <section className=" mt-10 md:mt-20  text-secondary-300 w-full  m-auto flex flex-col  gap-10 p-2 px-5 items-center ">
           <div className=" text-secondary-300 max-w-[1480px] font-normal leading-normal lg:text-[32px] md:text-3xl text-left text-lg">
-            ZestIoT is an IoT/AI powered connected operations platform
+            ZestIOT is an IoT/AI powered connected operations platform
             empowering businesses with proactive decision making and
             predictability in Operations.
             <br />
@@ -414,7 +396,7 @@ export default function Home() {
 
       <div className=" relative -mt-10 md:-mt-56 flex overflow-x-hidden bg-primary-100  overflow-hidden">
         <div className=" py-12 animate-marquee whitespace-nowrap text-white text-3xl md:text-4xl lg:text-5xl font-light ">
-          <span className=" w-1"> </span>
+          <span className=" w-1"> | </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -422,6 +404,7 @@ export default function Home() {
           <span> MANPOWER | </span>
           <span className="font-bold"> 800</span>
           <span> EQUIPMENTS </span>
+          <span className=" w-1"> | </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -429,6 +412,7 @@ export default function Home() {
           <span> MANPOWER | </span>
           <span className="font-bold"> 800</span>
           <span> EQUIPMENTS </span>
+          <span className=" w-1"> | </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -436,10 +420,11 @@ export default function Home() {
           <span> MANPOWER | </span>
           <span className="font-bold"> 800</span>
           <span> EQUIPMENTS </span>
+          <span className=" w-1">&nbsp; </span>
         </div>
 
         <div className=" absolute top-0 py-12 animate-marquee2 whitespace-nowrap text-white text-3xl md:text-4xl lg:text-5xl font-light ">
-          <span className=" w-1"></span>
+          <span className=" w-1"> | </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -447,6 +432,7 @@ export default function Home() {
           <span> MANPOWER | </span>
           <span className="font-bold"> 800</span>
           <span> EQUIPMENTS </span>
+          <span className=" w-1"> | </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -454,6 +440,7 @@ export default function Home() {
           <span> MANPOWER | </span>
           <span className="font-bold"> 800</span>
           <span> EQUIPMENTS </span>
+          <span className=" w-1"> | </span>
           <span> RUNNING LIVE : </span>
           <span className="font-bold">800</span>
           <span> FLIGHTS | </span>
@@ -461,6 +448,7 @@ export default function Home() {
           <span> MANPOWER | </span>
           <span className="font-bold"> 800</span>
           <span> EQUIPMENTS </span>
+          <span className=" w-1">&nbsp; </span>
         </div>
       </div>
 
@@ -499,7 +487,7 @@ export default function Home() {
               className="  object-contain  px-3"
               width={160}
               height={70}
-              src="/customerLogos/Bengaluru_Airport_Logo_ 1.png"
+              src="/customerLogos/Bengaluru_Airport_Logo_ 1.svg"
               alt="hero"
             />
             <Image
@@ -513,7 +501,7 @@ export default function Home() {
               className="  object-contain  px-3"
               width={160}
               height={70}
-              src="/customerLogos/celebi logo 1.png"
+              src="/customerLogos/celebi logo 1.svg"
               alt="hero"
             />
             <Image
@@ -548,7 +536,7 @@ export default function Home() {
               className="  object-contain  px-3"
               width={160}
               height={70}
-              src="/customerLogos/Bharat-Petroleum-logo 1.png"
+              src="/customerLogos/Bharat-Petroleum-logo 1.svg"
               alt="hero"
             />
             <Image
@@ -569,14 +557,14 @@ export default function Home() {
               className="  object-contain  px-3"
               width={160}
               height={70}
-              src="/customerLogos/Hindustan_Petroleum_Logo_ 1.png"
+              src="/customerLogos/Hindustan_Petroleum_Logo_ 1.svg"
               alt="hero"
             />
             <Image
               className="  object-contain  px-3"
               width={160}
               height={70}
-              src="/customerLogos/HOSPET 1.png"
+              src="/customerLogos/HOSPET 1.svg"
               alt="hero"
             />
             <Image
@@ -639,7 +627,7 @@ export default function Home() {
               className="  object-contain  px-3"
               width={160}
               height={70}
-              src="/customerLogos/AirAsia_New_Logo 1.png"
+              src="/customerLogos/AirAsia_New_Logo 1.svg"
               alt="hero"
             />
             <Image
@@ -942,15 +930,15 @@ export default function Home() {
               method="post"
               enctype="text/plain"
             >
-              <div className=" flex w-full flex-col md:flex-row">
+              <div className=" grid gap-3 grid-cols-2">
                 <input
-                  className="  px-4 mr-0 mb-1.5 md:mb-0 md:mr-5  h-[50px] text-[#000000] border rounded-[10px] outline-none border-secondary-200"
+                  className="  px-4 h-[50px] text-[#000000] border rounded-[10px] outline-none border-secondary-200"
                   type="text"
                   placeholder="First name*"
                   name="name"
                 />
                 <input
-                  className=" px-4 ml-0 mt-2 md:mt-0 md:ml-5  h-[50px] text-[#000000] border rounded-[10px]  outline-none border-secondary-200"
+                  className=" px-4 h-[50px] text-[#000000] border rounded-[10px]  outline-none border-secondary-200"
                   type="text"
                   placeholder="Surname*"
                   name="surname"
